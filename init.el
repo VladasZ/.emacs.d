@@ -28,8 +28,13 @@
 (require 'rtags)
 (cmake-ide-setup)
 
-(defcustom al-path "~/.emacs/init.el"
-	"Normal hook run when entering Text mode and many related modes."
-	:group 'wp
-    :type 'hook
+(defcustom al-path "~/.emacs.d/init.el"
+   "init.el file path."
+   :group 'paths
+   :type 'directory
 )
+
+(defun al ()
+  "Open init.el file"
+  (interactive)
+  (find-file-other-window al-path))
