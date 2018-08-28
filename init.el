@@ -15,15 +15,18 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
- '(default-frame-alist (quote ((height . 80) (width . 200))))
- '(package-selected-packages (quote (treemacs flycheck-rtags flycheck cmake-ide))))
+ '(default-frame-alist (quote ((height . 80) (width . 160))))
+ '(package-selected-packages
+   (quote
+    (slime use-package treemacs flycheck-rtags flycheck cmake-ide)))
+ '(truncate-lines nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "#2d3743" :foreground "#e1e1e0" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 160 :width normal :foundry "nil" :family "Menlo")))))
 
 (defcustom al-path "~/.emacs.d/init.el"
    "init.el file path."
@@ -35,3 +38,7 @@
   "Open init.el file"
   (interactive)
   (find-file al-path))
+
+(defalias 'inst 'package-install)
+(defalias 'var  'customize-variable)
+(defalias 'eb   'eval-buffer)
