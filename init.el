@@ -14,11 +14,10 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(custom-enabled-themes (quote (misterioso)))
- '(default-frame-alist (quote ((height . 80) (width . 160))))
+ '(custom-enabled-themes '(misterioso))
+ '(default-frame-alist '((height . 80) (width . 160)))
  '(package-selected-packages
-   (quote
-    (slime use-package treemacs flycheck-rtags flycheck cmake-ide)))
+   '(auto-complete slime use-package flycheck-rtags flycheck cmake-ide))
  '(truncate-lines nil))
 
 (custom-set-faces
@@ -42,3 +41,7 @@
 (defalias 'inst 'package-install)
 (defalias 'var  'customize-variable)
 (defalias 'eb   'eval-buffer)
+
+(add-to-list 'load-path "~/.emacs.d/packages/dired-sidebar")
+(add-to-list 'load-path "~/.emacs.d/packages/dired-hacks")
+(require 'dired-sidebar)
