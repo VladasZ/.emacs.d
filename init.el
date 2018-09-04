@@ -14,8 +14,9 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(custom-enabled-themes '(misterioso))
- '(default-frame-alist '((height . 80) (width . 160)))
+ '(custom-enabled-themes (quote (misterioso)))
+ '(default-frame-alist (quote ((height . 38) (width . 160))))
+ '(linum-format "%d ")
  '(package-selected-packages
    (quote
     (cmake-mode magit auto-complete use-package treemacs)))
@@ -29,15 +30,12 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#2d3743" :foreground "#e1e1e0" :height 160 :family "Menlo")))))
 
+(setq linum-format "%d ")
+
 
 (add-to-list 'load-path "~/.emacs.d/init")
 
 (load "shortcuts")
 
-(defalias 'inst 'package-install)
-(defalias 'var  'customize-variable)
-(defalias 'eb   'eval-buffer)
-
-(add-to-list 'load-path "~/.emacs.d/packages/dired-sidebar")
-(add-to-list 'load-path "~/.emacs.d/packages/dired-hacks")
-(require 'dired-sidebar)
+(al)
+(treemacs)

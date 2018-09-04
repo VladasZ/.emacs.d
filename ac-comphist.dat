@@ -1,7 +1,13 @@
-((("load-path" .
+((("message" .
+   [0 0 0 1 0 0 0])
+  ("hello" .
+   [0 0 0 1 1])
+  ("defun" .
+   [0 0 0 1 0])
+  ("load-path" .
    [0 0 1 0 0 0 0 0 0])
   ("defalias" .
-   [0 0 1 0 0 0 0 0])
+   [0 0 1 0 0 0 0 1])
   ("add-to-list" .
    [0 0 1 0 0 0 1 0 0 0 0])
   ("~/.emacs.d/init.el" .

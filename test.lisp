@@ -1,6 +1,4 @@
 
-(load "~/.emacs.d/shortcuts.el")
-
 (defun print (number)
   (message "%d" number))
 
@@ -29,9 +27,14 @@
 (print-list '(1 2 3 4 5))
 
 
+(defun hello ()
+    (message "hello"))
+
 (message (cond-crogol 3))
 (message (cond-crogol 4))
 (message (cond-crogol 5))
 
+
+(hello)
 
 
