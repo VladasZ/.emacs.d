@@ -16,8 +16,13 @@
   (cond
     ((eq number 3) "triaglok")
     ((eq number 4) "sopokok")
-    ((eq number 5) "petihatko")))
+    ((eq number 5) "petihatko")
+    (t "repiluglem!")))
 
+(defun listolko (list)
+  (if (listp list)
+      (message "uu lestolkovenije!")
+      (message "uu gaunoo((")))
 
 (message "hello")
 
@@ -33,8 +38,11 @@
 (message (cond-crogol 3))
 (message (cond-crogol 4))
 (message (cond-crogol 5))
+(message (cond-crogol 6))
 
 
-(hello)
+(listolko '(3))
+(listolko 4)
 
+  
 

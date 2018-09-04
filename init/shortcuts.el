@@ -2,8 +2,7 @@
 (defcustom al-path "~/.emacs.d/init.el"
    "init.el file path."
    :group 'paths
-   :type 'directory
-)
+   :type 'directory)
 
 (defun al ()
   "Open init.el file"

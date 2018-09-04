@@ -19,7 +19,7 @@
  '(linum-format "%d ")
  '(package-selected-packages
    (quote
-    (cmake-mode magit auto-complete use-package treemacs)))
+    (highlight-defined cmake-mode magit auto-complete use-package treemacs)))
  '(treemacs-width 22)
  '(truncate-lines nil))
 
@@ -36,6 +36,8 @@
 (add-to-list 'load-path "~/.emacs.d/init")
 
 (load "shortcuts")
+(load "auto-modes")
+
 
 (al)
 (treemacs)
