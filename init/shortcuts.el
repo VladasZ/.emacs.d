@@ -15,3 +15,4 @@
 (defalias 'eb   'eval-buffer)
 (defalias 'com  'auto-complete-mode)
 (defalias 'rem  'package-delete)
+(defalias 'dir  'dired-sidebar-toggle-sidebar)
