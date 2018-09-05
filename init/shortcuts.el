@@ -1,9 +1,4 @@
 
-(defcustom al-path "~/.emacs.d/init.el"
-   "init.el file path."
-   :group 'paths
-   :type 'directory)
-
 (defun al () (interactive) (find-file al-path))
 (defun sc () (interactive) (find-file "~/.emacs.d/init/shortcuts.el"))
 

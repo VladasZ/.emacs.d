@@ -4,6 +4,6 @@
     (check-package pack)))
 
 (setq packages-list
-      '(treemacs treemacs))
+      '(treemacs auto-complete))
 
 (check-packages packages-list)
