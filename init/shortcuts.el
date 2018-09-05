@@ -18,3 +18,4 @@
 (defalias 'inst 'package-install)
 (defalias 'var 'customize-variable)
 (defalias 'eb 'eval-buffer)
+(defalias 'file 'find-file)
