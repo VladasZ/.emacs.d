@@ -35,6 +35,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/init")
 
+(load "packages")
 (load "shortcuts")
 (load "auto-modes")
 
