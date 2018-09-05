@@ -16,7 +16,7 @@
  '(custom-safe-themes
    (quote
 	("5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default)))
- '(default-frame-alist (quote ((height . 40) (width . 160))))
+ '(default-frame-alist (quote ((height . 48) (width . 160))))
  '(linum-format "%d ")
  '(nrepl-message-colors
    (quote
@@ -35,7 +35,9 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:background "#272822" :foreground "#F8F8F2" :slant normal :weight normal :height 120 :width normal :foundry "outline" :family "Droid Sans Mono")))))
 
+
 (setq linum-format "%d ")
+(tool-bar-mode -1)
 
 (add-to-list 'load-path "~/.emacs.d/init")
 
@@ -44,6 +46,7 @@
 (load "packages")
 (load "shortcuts")
 (load "auto-modes")
+(load "hotkeys")
 
 (al)
 (treemacs)
