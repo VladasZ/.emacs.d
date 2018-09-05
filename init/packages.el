@@ -4,6 +4,10 @@
     (check-package pack)))
 
 (setq packages-list
-      '(treemacs auto-complete))
+      '(
+		treemacs
+		auto-complete
+		cmake-mode
+		))
 
 (check-packages packages-list)

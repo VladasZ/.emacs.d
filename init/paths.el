@@ -1,3 +1,4 @@
+(add-to-list 'load-path "~/.emacs.d/packages")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (defcustom al-path "~/.emacs.d/init.el"

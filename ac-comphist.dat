@@ -1,48 +1,50 @@
-((("require-packages" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("pack" .
-   [2 0 0 0])
-  ("packages-list" .
-   [0 0 0 0 0 2 0 0 0 0 0 0 0])
-  ("levenstein" .
-   [0 0 0 0 1 0 0 0 0 0])
-  ("setq" .
-   [1 0 0 0])
-  ("t" .
-   [1])
-  ("check-packages" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("dolist" .
-   [1 0 0 1 0 0])
-  ("packages" .
-   [3 0 0 1 0 0 0 0])
-  ("check-package" .
-   [0 0 0 2 0 1 0 0 0 0 0 0 0])
-  ("restart-emacs" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("interactive" .
-   [0 0 0 0 2 0 0 0 0 0 0])
-  ("treemacs" .
-   [0 0 0 2 2 0 0 1])
-  ("require" .
-   [0 0 1 2 2 0 0])
-  ("~/.emacs.d/init.el" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
-   [0 0 1 0 0 0 1 0 0 0 0])
-  ("defalias" .
-   [0 0 1 0 0 0 0 2])
-  ("load-path" .
-   [0 0 1 0 0 0 0 0 0])
-  ("defun" .
-   [1 0 0 2 3])
-  ("hello" .
-   [0 0 0 1 1])
-  ("message" .
-   [0 0 0 1 0 0 0])
-  ("file" .
-   [0 0 1 0])
+((("foreach" .
+   [0 0 0 0 1 0 0])
+  ("package" .
+   [1 0 0 0 0 1 1])
   ("find-file" .
    [0 0 1 0 0 0 0 0 0])
-  ("package" .
-   [1 0 0 0 0 1 1])))
+  ("file" .
+   [0 0 1 0])
+  ("message" .
+   [0 0 0 1 0 0 0])
+  ("hello" .
+   [0 0 0 1 1])
+  ("defun" .
+   [1 0 0 2 3])
+  ("load-path" .
+   [0 0 1 0 0 0 0 0 0])
+  ("defalias" .
+   [0 0 1 0 0 0 0 2])
+  ("add-to-list" .
+   [0 0 1 0 0 0 1 0 0 0 0])
+  ("~/.emacs.d/init.el" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 1 2 2 0 0])
+  ("treemacs" .
+   [0 0 0 2 2 0 0 1])
+  ("interactive" .
+   [0 0 0 0 2 0 0 0 0 0 0])
+  ("restart-emacs" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("check-package" .
+   [0 0 0 2 0 1 0 0 0 0 0 0 0])
+  ("packages" .
+   [3 0 0 1 0 0 0 0])
+  ("dolist" .
+   [1 0 0 1 0 0])
+  ("check-packages" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("t" .
+   [1])
+  ("setq" .
+   [1 0 0 0])
+  ("levenstein" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("packages-list" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0])
+  ("pack" .
+   [2 0 0 0])
+  ("require-packages" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])))
