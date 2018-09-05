@@ -8,6 +8,7 @@
 		treemacs
 		auto-complete
 		cmake-mode
+		monokai-theme 
 		))
 
 (check-packages packages-list)
