@@ -7,6 +7,7 @@
 (defun al () (interactive) (find-file al-path))
 (defun sc () (interactive) (find-file "~/.emacs.d/init/shortcuts.el"))
 
+(defalias 'res 'restart-emacs)
 (defalias 'inst 'package-install)
 (defalias 'var 'customize-variable)
 (defalias 'eb 'eval-buffer)

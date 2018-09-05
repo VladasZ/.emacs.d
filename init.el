@@ -16,10 +16,10 @@
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
  '(default-frame-alist (quote ((height . 38) (width . 160))))
- '(linum-format "%d ")
+ '(linum-format "%d " t)
  '(package-selected-packages
    (quote
-    (highlight-defined cmake-mode magit auto-complete use-package treemacs)))
+    (restart-emacs highlight-defined cmake-mode magit auto-complete use-package treemacs)))
  '(treemacs-width 22)
  '(truncate-lines nil))
 
@@ -32,13 +32,12 @@
 
 (setq linum-format "%d ")
 
-
 (add-to-list 'load-path "~/.emacs.d/init")
 
 (load "packages")
 (load "shortcuts")
 (load "auto-modes")
 
-
 (al)
 (treemacs)
+
