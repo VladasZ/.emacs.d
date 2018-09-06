@@ -16,7 +16,6 @@
  '(custom-safe-themes
    (quote
 	("5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default)))
- '(default-frame-alist (quote ((height . 48) (width . 160))))
  '(linum-format "%d " t)
  '(nrepl-message-colors
    (quote
@@ -33,8 +32,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:background "#272822" :foreground "#F8F8F2" :slant normal :weight normal :height 220 :width normal :foundry "outline" :family "Droid Sans Mono")))))
+)
 
+(add-to-list 'default-frame-alist '(width  . 160))
+(add-to-list 'default-frame-alist '(height . 40))
+
+(set-face-attribute 'default nil
+                    :family  "Droid Sans Mono"
+                    :height  140)
 
 (setq linum-format "%d ")
 (setq ring-bell-function 'ignore)
