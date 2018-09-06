@@ -22,7 +22,7 @@
 	("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-	(cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete)))
+	(drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete)))
  '(tab-width 4)
  '(treemacs-width 22)
  '(truncate-lines nil))
@@ -32,10 +32,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-)
+ )
 
 (add-to-list 'default-frame-alist '(width  . 160))
-(add-to-list 'default-frame-alist '(height . 40))
+(add-to-list 'default-frame-alist '(height . 44))
 
 (set-face-attribute 'default nil
                     :family  "Droid Sans Mono"

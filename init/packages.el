@@ -8,7 +8,11 @@
 		treemacs
 		auto-complete
 		cmake-mode
-		monokai-theme 
+		monokai-theme
+		drag-stuff
 		))
 
 (check-packages packages-list)
+
+(drag-stuff-global-mode 1)
+(drag-stuff-define-keys)
