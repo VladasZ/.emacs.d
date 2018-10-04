@@ -2,8 +2,8 @@
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
-  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
-;  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+;  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
+  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
@@ -14,17 +14,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cmake-ide-build-dir "~/dev/projects/testengine/build")
- '(custom-enabled-themes (quote (monokai)))
+ '(custom-enabled-themes '(monokai))
  '(custom-safe-themes
-   (quote
-	("5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default)))
+   '("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default))
  '(linum-format "%d " t)
  '(nrepl-message-colors
-   (quote
-	("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
+   '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   (quote
-	(cmake-ide drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete)))
+   '(projectile monokai-alt-theme cmake-ide drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete))
  '(tab-width 4)
  '(treemacs-width 22)
  '(truncate-lines nil))

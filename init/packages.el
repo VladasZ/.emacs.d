@@ -6,6 +6,7 @@
 (setq packages-list
       '(
 		treemacs
+		projectile
 		auto-complete
 		cmake-mode
 		monokai-theme
