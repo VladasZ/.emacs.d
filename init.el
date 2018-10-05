@@ -25,6 +25,9 @@
  '(package-selected-packages
    (quote
 	(magit pt projectile monokai-alt-theme cmake-ide drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete)))
+ '(projectile-globally-ignored-directories
+   (quote
+	(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make")))
  '(tab-width 4)
  '(treemacs-width 22)
  '(truncate-lines nil))
@@ -49,9 +52,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/init")
 
-(setq find-program "\"C:\\cygwin64\\bin\\find.exe\"")
-(setq grep-program "\"C:\\cygwin64\\bin\\grep.exe\"")
-
 (load "paths")
 (load "utils")
 (load "packages")
@@ -60,6 +60,12 @@
 (load "hotkeys")
 (load "projects")
 
-(al)
+(setenv "PATH"
+  (concat
+   ;; Change this with your path to MSYS bin directory
+   "C:\\cygwin64\\bin;"
+   (getenv "PATH")))
+
+(open-init)
 (treemacs)
 
