@@ -1,4 +1,10 @@
 
+(setq path-utils "~/.emacs.d/utils")
+
+(defun ut ()
+  (interactive)
+  (find-file (concat path-utils "/" "Build.py")))
+
 (setq path-engine (concat path-proj "/testengine"))
 
 (defun engine ()

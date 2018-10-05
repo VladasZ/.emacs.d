@@ -6,9 +6,12 @@
 (map-key "M-1"    'shell-command)
 
 (map-key "C-s"    'shrink-window)
+(map-key "M-s"    'shrink-window-if-larger-than-buffer)
 (map-key "C-f"    'projectile-grep)
 (map-key "C-o"    'projectile-find-file)
 (map-key "C-z"    'undo)
 (map-key "C-q"    'delete-window)
 (map-key "C-<up>" 'ff-find-other-file)
+(map-key "C-<down>" 'ff-find-other-file)
 (map-key "C-d"    'duplicate-line)
+(map-key "M-d"    'kill-whole-line)

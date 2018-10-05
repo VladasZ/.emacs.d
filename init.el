@@ -2,8 +2,8 @@
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
-;  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
-  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
+;  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
@@ -24,7 +24,7 @@
 	("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-	(magit pt projectile monokai-alt-theme cmake-ide drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete)))
+	(levenshtein magit pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete)))
  '(projectile-globally-ignored-directories
    (quote
 	(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make")))
@@ -48,7 +48,12 @@
 
 (setq linum-format "%d ")
 (setq ring-bell-function 'ignore)
+
 (tool-bar-mode -1)
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+
+(setq projectile-projects-cache (make-hash-table))
 
 (add-to-list 'load-path "~/.emacs.d/init")
 
@@ -68,4 +73,5 @@
 
 (open-init)
 (treemacs)
+(projectile-global-mode)
 

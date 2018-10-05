@@ -21,7 +21,11 @@
   ;; Pop new window only if shell isnt visible
   ;; in any frame.
   (unless (get-buffer-window "*Python*" t) 
-    (python-shell-switch-to-shell)))
+    (python-shell-switch-to-shell))
+
+  (sleep-for 0.5)
+  (shrink-window-if-larger-than-buffer)
+  )
 
 (defun my-python-shell-run-region ()
   (interactive)

@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/dev/testengine/")
+("~/.emacs.d/" "~/.emacs.d/utils/" "~/dev/projects/smon/" "~/dev/work/service/third_party/kit/" "~/dev/work/service/" "~/dev/projects/testengine/")
