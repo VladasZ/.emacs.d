@@ -53,7 +53,7 @@
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
 
-(setq projectile-projects-cache (make-hash-table))
+(global-auto-complete-mode t)
 
 (add-to-list 'load-path "~/.emacs.d/init")
 
