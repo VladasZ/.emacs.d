@@ -57,6 +57,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/init")
 
+(load "platform")
 (load "paths")
 (load "utils")
 (load "packages")

@@ -6,6 +6,17 @@
   (if (not (package-installed package))
       (package-install package)))
 
+(defun replace-in-string (in what with)
+  (replace-regexp-in-string (regexp-quote what) with in nil 'literal))
+
+(defun replaced-path-shell-command (command)
+  (interactive "Shell command:")
+  (shell-command command))
+
+(defun build-project ()
+  (interactive)
+  (shell-command "python ~/.emacs.d/utils/Build.py"))
+
 
 ;; Run python and pop-up its shell.
 ;; Kill process to solve the reload modules problem.
