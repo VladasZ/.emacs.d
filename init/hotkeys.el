@@ -9,3 +9,4 @@
 (map-key "C-o" 'projectile-find-file)
 (map-key "C-z" 'undo)
 (map-key "C-q" 'delete-window)
+(map-key "M-1" 'shell-command)
