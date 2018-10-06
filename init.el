@@ -14,20 +14,17 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cmake-ide-build-dir "~/dev/projects/testengine/build")
- '(custom-enabled-themes (quote (monokai)))
+ '(custom-enabled-themes '(monokai))
  '(custom-safe-themes
-   (quote
-	("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default)))
+   '("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default))
  '(linum-format "%d " t)
  '(nrepl-message-colors
-   (quote
-	("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
+   '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   (quote
-	(levenshtein magit pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete)))
+   '(levenshtein magit pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete))
  '(projectile-globally-ignored-directories
-   (quote
-	(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make")))
+   '(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make"))
+ '(python-shell-interpreter "python3")
  '(tab-width 4)
  '(treemacs-width 22)
  '(truncate-lines nil))
@@ -46,15 +43,6 @@
                     :family  "Droid Sans Mono"
                     :height  140)
 
-(setq linum-format "%d ")
-(setq ring-bell-function 'ignore)
-
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(toggle-scroll-bar -1)
-
-(global-auto-complete-mode t)
-
 (add-to-list 'load-path "~/.emacs.d/init")
 
 (load "platform")
@@ -65,6 +53,15 @@
 (load "auto-modes")
 (load "hotkeys")
 (load "projects")
+
+(setq linum-format "%d ")
+(setq ring-bell-function 'ignore)
+
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+
+(global-auto-complete-mode t)
 
 (setenv "PATH"
   (concat

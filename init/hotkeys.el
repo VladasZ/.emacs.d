@@ -1,4 +1,5 @@
 
+
 (defun map-key (key func)
   (global-set-key (kbd key) func))
 
@@ -16,4 +17,6 @@
 (map-key "C-<down>" 'ff-find-other-file)
 (map-key "C-d"    'duplicate-line)
 (map-key "C-n"    'treemacs-create-file)
+(map-key "C-a"    'mark-whole-buffer)
+(map-key "M-/"    'comment-or-uncomment-region)
 

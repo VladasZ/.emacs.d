@@ -11,6 +11,7 @@
 		cmake-mode
 		monokai-theme
 		drag-stuff
+		magit
 		))
 
 (check-packages packages-list)

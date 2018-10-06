@@ -43,11 +43,11 @@
   (python-shell-send-region (region-beginning) (region-end))
   (python-shell-switch-to-shell))
 
-(eval-after-load "python"
-  '(progn
-     (define-key python-mode-map (kbd "C-c C-c") 'my-python-shell-run)
-     (define-key python-mode-map (kbd "C-c C-r") 'my-python-shell-run-region)
-     (define-key python-mode-map (kbd "C-h f") 'python-eldoc-at-point)))
+;; (eval-after-load "python"
+;;   '(progn
+;;      (define-key python-mode-map (kbd "C-c C-c") 'my-python-shell-run)
+;;      (define-key python-mode-map (kbd "C-c C-r") 'my-python-shell-run-region)
+;;      (define-key python-mode-map (kbd "C-h f") 'python-eldoc-at-point)))
 
 (defun duplicate-line (arg)
   "Duplicate current line, leaving point in lower line."
