@@ -69,7 +69,7 @@
    "C:\\cygwin64\\bin;"
    (getenv "PATH")))
 
-(open-init)
+(ai)
 (treemacs)
 (projectile-global-mode)
 

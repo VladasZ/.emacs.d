@@ -13,9 +13,13 @@
   (interactive "Shell command:")
   (shell-command command))
 
-(defun build-project ()
+(defun prepare-build-project ()
   (interactive)
-  (shell-command "python ~/.emacs.d/utils/Build.py"))
+  (async-shell-command "python3 ~/.emacs.d/utils/Build.py"))
+
+(defun make-project ()
+  (interactive)
+  (async-shell-command "python3 ~/.emacs.d/utils/Build.py --make"))
 
 
 ;; Run python and pop-up its shell.

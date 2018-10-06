@@ -1,6 +1,6 @@
 
 (defun al () (interactive) (find-file path-hotkeys))
-(defun open-init () (interactive) (find-file al-path))
+(defun ai () (interactive) (find-file al-path))
 (defun sc () (interactive) (find-file "~/.emacs.d/init/shortcuts.el"))
 
 (defalias 'res  'restart-emacs)
