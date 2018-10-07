@@ -6,7 +6,7 @@
 ;  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
-(package-initialize)
+(unless package--initialized (package-initialize t))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -38,6 +38,11 @@
 
 (add-to-list 'default-frame-alist '(width  . 160))
 (add-to-list 'default-frame-alist '(height . 44))
+
+(fset 'yes-or-no-p 'y-or-n-p)
+
+(setq inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
 
 (set-face-attribute 'default nil
                     :family  "Droid Sans Mono"

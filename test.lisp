@@ -9,7 +9,7 @@
 
 (defun print-list (list)
   (when list
-    (print (car list))
+    (message (car list))
     (print-list (cdr list))))
 
 (defun cond-crogol (number)
@@ -21,28 +21,14 @@
 
 (defun listolko (list)
   (if (listp list)
-      (message "uu lestolkovenije!")
-      (message "uu gaunoo((")))
+    (message "uu lestolkovenije!")
+    (message "uu gaunoo((")))
 
-(message "hello")
+(defun buffers-name-list ()
+  (mapcar (function buffer-name) (buffer-list)))
 
-(print (len (cdr '(1))))
-
-
-(print-list '(1 2 3 4 5))
-
-
-(defun hello ()
-    (message "hello"))
-
-(message (cond-crogol 3))
-(message (cond-crogol 4))
-(message (cond-crogol 5))
-(message (cond-crogol 6))
+(defun buffers-file-list ()
+  (mapcar (function buffer-file-name) (buffer-list)))
 
 
-(listolko '(3))
-(listolko 4)
-
-  
 
