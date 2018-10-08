@@ -32,3 +32,9 @@
 (defun tesla ()
   (interactive)
   (find-file (concat path-service "/" path-cmake-file)))
+
+(setq path-verilog (concat path-sand "/verilog_test"))
+
+(defun ver ()
+  (interactive)
+  (find-file (concat path-verilog "/build.py")))

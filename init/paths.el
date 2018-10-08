@@ -8,5 +8,6 @@
 (setq path-dev "~/dev")
 (setq path-work (concat path-dev "/work"))
 (setq path-proj (concat path-dev "/projects"))
+(setq path-sand (concat path-dev "/sand"))
 
 (setq path-cmake-file "CMakeLists.txt")

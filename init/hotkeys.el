@@ -22,7 +22,23 @@
 (map-key "C-d"    'duplicate-line)
 (map-key "C-n"    'treemacs-create-file)
 (map-key "C-a"    'mark-whole-buffer)
-(map-key "C-b"    'make-project)
+;(map-key "C-b"    'make-project)
 
 (with-eval-after-load 'python
   (mode-key python-mode-map "C-r" 'run-python-script))
+
+(defun run-verilog-project ()
+  (interactive)
+  (save-buffer)
+  (async-shell-command "python3 build.py --run"))
+
+(defun build-verilog-project ()
+  (interactive)
+  (save-buffer)
+  (async-shell-command "python3 build.py"))
+
+(with-eval-after-load 'verilog-mode
+  (mode-key verilog-mode-map "C-r" 'run-verilog-project)
+  (mode-key verilog-mode-map "C-b" 'build-verilog-project))
+
+
