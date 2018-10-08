@@ -37,8 +37,14 @@
   (save-buffer)
   (async-shell-command "python3 build.py"))
 
+(defun simulate-verilog-project ()
+  (interactive)
+  (save-buffer)
+  (async-shell-command "python3 build.py --simulate"))
+
 (with-eval-after-load 'verilog-mode
   (mode-key verilog-mode-map "C-r" 'run-verilog-project)
-  (mode-key verilog-mode-map "C-b" 'build-verilog-project))
+  (mode-key verilog-mode-map "C-b" 'build-verilog-project)
+  (mode-key verilog-mode-map "C-t" 'simulate-verilog-project))
 
 
