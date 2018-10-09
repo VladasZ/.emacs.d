@@ -20,8 +20,9 @@
 (map-key "C-<up>" 'ff-find-other-file)
 (map-key "C-<down>" 'ff-find-other-file)
 (map-key "C-d"    'duplicate-line)
-(map-key "C-n"    'treemacs-create-file)
+(map-key "C-n"    'find-file)
 (map-key "C-a"    'mark-whole-buffer)
+(map-key "C-."    'iedit-mode)
 ;(map-key "C-b"    'make-project)
 
 (with-eval-after-load 'python
