@@ -42,6 +42,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (delete-selection-mode 1)
 (setq verilog-auto-newline nil)
+(setq-default cursor-type 'bar)
+(cua-mode)
 
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)

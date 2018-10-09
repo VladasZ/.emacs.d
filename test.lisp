@@ -31,4 +31,8 @@
   (mapcar (function buffer-file-name) (buffer-list)))
 
 
+(message (find-file-in-parent-dirs "test.lisp"))
 
+(message (if (file-exists-p "~/.emacs.d/../.emacs.d/test.lisp")
+			 "uroborrooss!"
+		     "fuu"))

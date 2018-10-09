@@ -60,3 +60,12 @@
           (setq count (1- count))))
       (setq buffer-undo-list (cons (cons eol (point)) buffer-undo-list))))
   (next-line arg))
+
+
+(defun find-file-in-parent-dirs (file-name)
+  (interactive)
+  (if (file-exists-p (concat "./" file-name))
+	  (concat "./" file-name)
+	(find-file-in-parent-dirs (concat "../" file-name))))
+
+(message (find-file-in-parent-dirs "build.py"))
