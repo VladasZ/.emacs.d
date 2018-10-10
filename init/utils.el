@@ -61,7 +61,6 @@
       (setq buffer-undo-list (cons (cons eol (point)) buffer-undo-list))))
   (next-line arg))
 
-
 (defun find-file-in-parent-dirs (file-name)
   (interactive)
   (if (file-exists-p (concat "./" file-name))

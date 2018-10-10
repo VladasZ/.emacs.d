@@ -2,6 +2,7 @@
 (defun al () (interactive) (find-file path-hotkeys))
 (defun ai () (interactive) (find-file al-path))
 (defun sc () (interactive) (find-file "~/.emacs.d/init/shortcuts.el"))
+(defun bu () (interactive) (find-file "~/.emacs.d/utils/Build.py"))
 
 (defalias 'inst 'package-install)
 (defalias 'var  'customize-variable)
