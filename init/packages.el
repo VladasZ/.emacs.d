@@ -12,6 +12,8 @@
 		monokai-theme
 		drag-stuff
 		magit
+		iedit
+		super-save
 		))
 
 (check-packages packages-list)

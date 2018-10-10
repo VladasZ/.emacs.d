@@ -21,7 +21,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(iedit levenshtein magit pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete))
+   '(super-save iedit levenshtein magit pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs restart-emacs monokai-theme fsm color-theme-sanityinc-tomorrow auto-complete))
  '(projectile-globally-ignored-directories
    '(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make"))
  '(python-shell-interpreter "python3")
@@ -44,6 +44,10 @@
 (setq verilog-auto-newline nil)
 (setq-default cursor-type 'bar)
 (cua-mode)
+
+(super-save-mode +1)
+(setq super-save-auto-save-when-idle t)
+(setq auto-save-default nil)
 
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
