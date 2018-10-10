@@ -6,7 +6,7 @@
 ;  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
-(unless package--initialized (package-initialize t))
+(unless package--initialized (package-initialize))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
