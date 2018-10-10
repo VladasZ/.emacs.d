@@ -67,5 +67,3 @@
   (if (file-exists-p (concat "./" file-name))
 	  (concat "./" file-name)
 	(find-file-in-parent-dirs (concat "../" file-name))))
-
-(message (find-file-in-parent-dirs "build.py"))
