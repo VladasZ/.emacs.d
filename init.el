@@ -35,6 +35,7 @@
 (load "utils")
 (load "packages")
 (load "settings")
+(load "build")
 (load "shortcuts")
 (load "auto-modes")
 (load "hotkeys")

@@ -5,3 +5,4 @@
   (replace-in-string string "~" home-directory))
 
 (setq is-macos (eq system-type 'darwin))
+(setq is-windows (eq system-type 'windows-nt))

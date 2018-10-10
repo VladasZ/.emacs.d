@@ -19,11 +19,11 @@
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
 
-(setenv "PATH"
-  (concat
-   ;; Change this with your path to MSYS bin directory
-   "C:\\cygwin64\\bin;"
-   (getenv "PATH")))
+(if is-windows
+	(add-to-path "C:\\cygwin64\\bin;"))
+
+(if is-macos
+	(add-to-path "/usr/local/bin:"))
 
 (setq font-size
 	  (if is-macos

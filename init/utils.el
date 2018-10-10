@@ -67,3 +67,8 @@
   (if (file-exists-p (concat "./" file-name))
 	  (concat "./" file-name)
 	(find-file-in-parent-dirs (concat "../" file-name))))
+
+(defun add-to-path (value)
+  (setenv "PATH"
+		  (concat value (getenv "PATH"))))
+

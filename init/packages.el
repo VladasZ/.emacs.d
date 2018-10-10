@@ -27,3 +27,8 @@
 (super-save-mode +1)
 (setq super-save-auto-save-when-idle t)
 (setq auto-save-default nil)
+
+;; (with-eval-after-load 'treemacs
+;;   (defun treemacs-ignore-gitignore (file _)
+;;     (string= file ".gitignore"))
+;;   (push #'treemacs-ignore-gitignore treemacs-ignored-file-predicates))
