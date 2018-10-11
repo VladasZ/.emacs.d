@@ -37,4 +37,4 @@
 
 (defun ver ()
   (interactive)
-  (find-file (concat path-verilog "/build.py")))
+  (find-file (concat path-verilog "/top.v")))

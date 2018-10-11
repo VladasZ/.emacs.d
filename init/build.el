@@ -1,7 +1,4 @@
 
-(defun python-build-script (param)
-  (concat python-command (find-file-in-parent-dirs "build.py") " " param))
-
 (setq build-script-path (expand-home-path "~/.emacs.d/utils/Build.py"))
 
 (defun run-build-script-with-params (params)
@@ -13,7 +10,6 @@
 (defun run-python-script ()
   (interactive)
   (save-buffer)
-  (force-kill-buffers "Async Shell Command")
   (async-shell-command (concat python-command (buffer-file-name (current-buffer)))))
 
 ; C++
@@ -32,18 +28,19 @@
 
 ; Verilog
 
+(defun build-verilog-with-params (params)
+  (run-build-script-with-params (concat "--verilog " params)))
+  
 (defun run-verilog-project ()
   (interactive)
-  (save-buffer)
-  (async-shell-command (python-build-script "--run")))
+  (build-verilog-with-params "--run"))
 
 (defun build-verilog-project ()
   (interactive)
-  (save-buffer)
-  (async-shell-command (python-build-script "")))
+  (build-verilog-with-params "--build"))
 
 (defun simulate-verilog-project ()
   (interactive)
-  (run-build-script-with-params "--simulate"))
+  (build-verilog-with-params "--simulate"))
 
 
