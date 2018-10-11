@@ -10,6 +10,7 @@
 (map-key "M-d"      'kill-whole-line)
 (map-key "M-s"      'shrink-window-if-larger-than-buffer)
 (map-key "M-/"      'comment-or-uncomment-region)
+(map-key "M-a"      'other-window)
 
 (map-key "C-s"      'shrink-window)
 (map-key "C-f"      'projectile-grep)
