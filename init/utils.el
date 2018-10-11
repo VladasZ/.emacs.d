@@ -37,6 +37,13 @@
 	  (concat "./" file-name)
 	(find-file-in-parent-dirs (concat "../" file-name))))
 
+(require 'cl)
+(defun force-kill-buffers (regexp)
+  "Kill buffers matching regexpr without asking for confirmation."
+  (interactive "sKill buffers matching: ")
+  (cl-flet ((kill-buffer-ask (buffer) (kill-buffer buffer)))
+	(kill-matching-buffers regexp t t)))
+
 (defun replace-in-string (what with in)
   (replace-regexp-in-string (regexp-quote what) with in nil 'literal))
 

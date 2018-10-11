@@ -8,9 +8,29 @@
   (save-buffer)
   (async-shell-command (concat python-command build-script-path " " params)))
 
+; Python
+
+(defun run-python-script ()
+  (interactive)
+  (save-buffer)
+  (force-kill-buffers "Async Shell Command")
+  (async-shell-command (concat python-command (buffer-file-name (current-buffer)))))
+
+; C++
+
 (defun build-cpp-project ()
   (interactive)
   (run-build-script-with-params "--make"))
+
+(defun prepare-build-project ()
+  (interactive)
+  (run-build-script-with-params ""))
+
+(defun make-project ()
+  (interactive)
+  (run-build-script-with-params "--make"))
+
+; Verilog
 
 (defun run-verilog-project ()
   (interactive)
@@ -26,10 +46,4 @@
   (interactive)
   (run-build-script-with-params "--simulate"))
 
-(defun prepare-build-project ()
-  (interactive)
-  (run-build-script-with-params ""))
 
-(defun make-project ()
-  (interactive)
-  (run-build-script-with-params "--make"))
