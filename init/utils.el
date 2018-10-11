@@ -53,3 +53,7 @@
 
 (defun expand-home-path (path)
   (replace-in-string "~/" (concat (getenv "HOME") "/") path))
+
+(defun string-is-empty (string)
+  (or (null string)
+	  (zerop (length (trim string)))))

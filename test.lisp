@@ -2,6 +2,10 @@
 (defun print (number)
   (message "%d" number))
 
+(defun bool-string (bool) (if bool "True" "False"))
+
+(defun bool-message (bool) (message (bool-string bool)))
+
 (defun len (list)
   (if list
       (+ 1 (len (cdr list)))
@@ -35,4 +39,27 @@
 
 (message (if (file-exists-p "~/.emacs.d/../.emacs.d/test.lisp")
 			 "uroborrooss!"
-		     "fuu"))
+		   "fuu"))
+
+(setq test-string "1234567.gsdfg")
+
+(setq treemacs-ignored-types '("vcd" "out" "asc"))
+(setq treemacs-ignored-folders '("elpa"))
+
+
+(setq extension (file-name-extension test-string))
+
+(message (concat "Extension: " extension))
+
+
+(bool-message (member "vcd" treemacs-ignored-types))
+
+  
+(defun is-treemacs-ignored-file (file)
+  (setq extension (file-name-extension file))
+  (if (is-empty-string extension)
+	  (string-match treemacs-ignored-folders file)
+	  (member (file-name-extension file) treemacs-ignored-types)))
+
+(bool-message (is-treemacs-ignored-type "fsdfds.ac"))
+  
