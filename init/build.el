@@ -1,12 +1,12 @@
 
 (defun python-build-script (param)
-  (concat "python3 " (find-file-in-parent-dirs "build.py") " " param))
+  (concat python-command (find-file-in-parent-dirs "build.py") " " param))
 
-(setq build-script-path "~/.emacs.d/utils/Build.py")
+(setq build-script-path (expand-home-path "~/.emacs.d/utils/Build.py"))
 
 (defun run-build-script-with-params (params)
   (save-buffer)
-  (async-shell-command (concat "python3 " build-script-path " " params)))
+  (async-shell-command (concat python-command build-script-path " " params)))
 
 (defun build-cpp-project ()
   (interactive)
@@ -24,5 +24,12 @@
 
 (defun simulate-verilog-project ()
   (interactive)
-  (save-buffer)
-  (async-shell-command (python-build-script "--simulate")))
+  (run-build-script-with-params "--simulate"))
+
+(defun prepare-build-project ()
+  (interactive)
+  (run-build-script-with-params ""))
+
+(defun make-project ()
+  (interactive)
+  (run-build-script-with-params "--make"))

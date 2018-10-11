@@ -13,36 +13,6 @@
   (interactive "Shell command:")
   (shell-command command))
 
-(defun prepare-build-project ()
-  (interactive)
-  (async-shell-command "python3 ~/.emacs.d/utils/Build.py"))
-
-(defun make-project ()
-  (interactive)
-  (save-buffer)
-  (async-shell-command "python3 ~/.emacs.d/utils/Build.py --make"))
-
-(require 'cl)
-(defun bk-kill-buffers (regexp)
-  "Kill buffers matching REGEXP without asking for confirmation."
-  (interactive "sKill buffers matching this regular expression: ")
-  (cl-flet ((kill-buffer-ask (buffer) (kill-buffer buffer)))
-    (kill-matching-buffers regexp t t)))
-
-(defun run-python-script ()
-  (interactive)
-  (message  (buffer-file-name (current-buffer)))
-  (save-buffer)
-  (bk-kill-buffers "Async Shell Command")
-  (async-shell-command (concat "python3 " (buffer-file-name (current-buffer))))
-  (enlarge-window)
-  (enlarge-window)
-  (enlarge-window)
-  (enlarge-window)
-  (enlarge-window)
-  (enlarge-window)
-  )
-
 (defun duplicate-line (arg)
   "Duplicate current line, leaving point in lower line."
   (interactive "*p")
@@ -67,7 +37,12 @@
 	  (concat "./" file-name)
 	(find-file-in-parent-dirs (concat "../" file-name))))
 
+(defun replace-in-string (what with in)
+  (replace-regexp-in-string (regexp-quote what) with in nil 'literal))
+
 (defun add-to-path (value)
   (setenv "PATH"
 		  (concat value (getenv "PATH"))))
 
+(defun expand-home-path (path)
+  (replace-in-string "~/" (concat (getenv "HOME") "/") path))
