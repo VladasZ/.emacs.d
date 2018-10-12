@@ -19,7 +19,7 @@
 (check-packages packages-list)
 
 (drag-stuff-global-mode 1)
-(drag-stuff-define-keys)
+;(drag-stuff-define-keys)
 
 (global-auto-complete-mode t)
 (projectile-global-mode)

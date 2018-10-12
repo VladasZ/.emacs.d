@@ -8,7 +8,6 @@
 (setq verilog-auto-newline nil)
 (setq-default cursor-type 'bar)
 
-
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
 

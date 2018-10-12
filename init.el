@@ -41,8 +41,8 @@
 (load "hotkeys")
 (load "projects")
 
-(ai)
 (treemacs)
+(ai)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
