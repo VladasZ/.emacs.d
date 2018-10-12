@@ -18,12 +18,7 @@
 (map-key "M-<up>"    'drag-stuff-up)
 (map-key "M-<down>"  'drag-stuff-down)
 
-(defun super-magic-ultra-shrink ()
-  (interactive)
-  ;(shrink-window)
-  (shrink-window-horizontally))
-
-(map-key "C-s"       'super-magic-ultra-shrink)
+(map-key "C-s"       'shrink-window)
 (map-key "C-f"       'projectile-grep)
 (map-key "C-o"       'projectile-find-file)
 (map-key "C-z"       'undo)
@@ -34,7 +29,6 @@
 (map-key "C-n"       'find-file)
 (map-key "C-a"       'mark-whole-buffer)
 (map-key "C-."       'iedit-mode)
-
 
 (with-eval-after-load 'cc-mode
   (mode-key c-mode-base-map "C-b" 'build-cpp-project))
