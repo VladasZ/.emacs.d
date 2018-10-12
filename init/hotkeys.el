@@ -36,6 +36,7 @@
 (with-eval-after-load 'verilog-mode
   (mode-key verilog-mode-map "C-r" 'run-verilog-project)
   (mode-key verilog-mode-map "C-b" 'build-verilog-project)
+  (mode-key verilog-mode-map "M-f" 'flash-verilog-build)
   (mode-key verilog-mode-map "C-t" 'simulate-verilog-project))
 
 

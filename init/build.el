@@ -39,6 +39,10 @@
   (interactive)
   (build-verilog-with-params "--build"))
 
+(defun flash-verilog-build ()
+  (interactive)
+  (build-verilog-with-params "--flash"))
+
 (defun simulate-verilog-project ()
   (interactive)
   (build-verilog-with-params "--simulate"))
