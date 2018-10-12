@@ -18,11 +18,16 @@
 (map-key "M-<up>"    'drag-stuff-up)
 (map-key "M-<down>"  'drag-stuff-down)
 
-(map-key "C-s"       'shrink-window)
+(defun super-magic-ultra-shrink ()
+  (interactive)
+  ;(shrink-window)
+  (shrink-window-horizontally))
+
+(map-key "C-s"       'super-magic-ultra-shrink)
 (map-key "C-f"       'projectile-grep)
 (map-key "C-o"       'projectile-find-file)
 (map-key "C-z"       'undo)
-(map-key "C-q"       'delete-window)
+(map-key "C-q"       'kill-buffer-and-window)
 (map-key "C-<up>"    'ff-find-other-file)
 (map-key "C-<down>"  'ff-find-other-file)
 (map-key "C-d"       'duplicate-line)
