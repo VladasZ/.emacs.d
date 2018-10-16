@@ -33,7 +33,7 @@
   (interactive)
   (find-file (concat path-service "/" path-cmake-file)))
 
-(setq path-verilog (concat path-sand "/verilog_test"))
+(setq path-verilog (concat path-work "/NodeFPGA"))
 
 (defun ver ()
   (interactive)
