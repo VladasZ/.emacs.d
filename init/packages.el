@@ -12,7 +12,6 @@
 		monokai-theme
 		drag-stuff
 		magit
-		iedit
 		super-save
 		))
 

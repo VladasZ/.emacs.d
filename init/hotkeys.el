@@ -17,6 +17,8 @@
 (map-key "M-<left>"  'windmove-left)
 (map-key "M-<up>"    'drag-stuff-up)
 (map-key "M-<down>"  'drag-stuff-down)
+(map-key "M-`"       'projectile-find-file)
+
 
 (map-key "C-s"       'shrink-window)
 (map-key "C-f"       'projectile-grep)
@@ -28,7 +30,6 @@
 (map-key "C-d"       'duplicate-line)
 (map-key "C-n"       'find-file)
 (map-key "C-a"       'mark-whole-buffer)
-(map-key "C-."       'iedit-mode)
 
 (with-eval-after-load 'cc-mode
   (mode-key c-mode-base-map "C-b" 'build-cpp-project))

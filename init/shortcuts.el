@@ -16,4 +16,4 @@
 (defalias 'tab  'whitespace-mode)
 (defalias 'stat 'magit-status)
 (defalias 'push 'magit-push)
-
+(defalias 'swb  'split-window-below)
