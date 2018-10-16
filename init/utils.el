@@ -56,4 +56,4 @@
 
 (defun string-is-empty (string)
   (or (null string)
-	  (zerop (length (trim string)))))
+	  (zerop (length string))))

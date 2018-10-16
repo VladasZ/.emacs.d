@@ -34,32 +34,3 @@
 (defun buffers-file-list ()
   (mapcar (function buffer-file-name) (buffer-list)))
 
-
-(message (find-file-in-parent-dirs "test.lisp"))
-
-(message (if (file-exists-p "~/.emacs.d/../.emacs.d/test.lisp")
-			 "uroborrooss!"
-		   "fuu"))
-
-(setq test-string "1234567.gsdfg")
-
-(setq treemacs-ignored-types '("vcd" "out" "asc"))
-(setq treemacs-ignored-folders '("elpa"))
-
-
-(setq extension (file-name-extension test-string))
-
-(message (concat "Extension: " extension))
-
-
-(bool-message (member "vcd" treemacs-ignored-types))
-
-  
-(defun is-treemacs-ignored-file (file)
-  (setq extension (file-name-extension file))
-  (if (is-empty-string extension)
-	  (string-match treemacs-ignored-folders file)
-	  (member (file-name-extension file) treemacs-ignored-types)))
-
-(bool-message (is-treemacs-ignored-type "fsdfds.ac"))
-  

@@ -32,3 +32,12 @@
 (set-face-attribute 'default nil
                     :family  "Droid Sans Mono"
                     :height  font-size)
+
+(setq treemacs-ignored-types '("vcd" "out" "asc" "zip" "bin" "blif" "dat" "cache" "eld"))
+(setq treemacs-ignored-files '(".git" ".cache" "elpa"))
+
+(defun is-treemacs-ignored-file (file _)
+  (setq extension (file-name-extension file))
+  (if (string-is-empty extension)
+	(member file treemacs-ignored-files)
+	(member (file-name-extension file) treemacs-ignored-types)))

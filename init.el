@@ -29,6 +29,9 @@
 	(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make")))
  '(python-shell-interpreter "python3")
  '(tab-width 4)
+ '(treemacs-ignored-file-predicates
+   (quote
+	(treemacs--std-ignore-file-predicate is-treemacs-ignored-file)))
  '(treemacs-width 22)
  '(truncate-lines nil))
 
