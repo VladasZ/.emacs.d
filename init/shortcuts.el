@@ -14,3 +14,6 @@
 (defalias 'eb   'eval-buffer)
 (defalias 'file 'find-file)
 (defalias 'tab  'whitespace-mode)
+(defalias 'stat 'magit-status)
+(defalias 'push 'magit-push)
+
