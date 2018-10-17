@@ -31,6 +31,9 @@
 (map-key "C-n"       'find-file)
 (map-key "C-a"       'mark-whole-buffer)
 
+(with-eval-after-load 'treemacs-mode
+  (mode-key treemacs-mode-map "C-d" 'treemacs-delete))
+
 (with-eval-after-load 'cc-mode
   (mode-key c-mode-base-map "C-b" 'build-cpp-project))
 
