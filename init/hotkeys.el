@@ -5,6 +5,12 @@
 (defun mode-key (mode key func)
   (define-key mode (kbd key) func))
 
+(global-set-key (kbd "<next>") 'my-scroll-up)
+(global-set-key (kbd "<prior>") 'my-scroll-down)
+
+(global-set-key [home] 'move-beginning-of-line)
+(global-set-key [end] 'move-end-of-line)
+
 (map-key "M-e"       'eval-buffer)
 (map-key "M-1"       'async-shell-command)
 (map-key "M-d"       'kill-whole-line)
@@ -14,7 +20,9 @@
 (map-key "M-\\"      'switch-to-next-buffer)
 (map-key "M-'"       'switch-to-prev-buffer)
 (map-key "M-<right>" 'windmove-right)	
+(map-key "ESC <right>" 'windmove-right)	
 (map-key "M-<left>"  'windmove-left)
+(map-key "ESC <left>"  'windmove-left)
 (map-key "M-<up>"    'drag-stuff-up)
 (map-key "M-<down>"  'drag-stuff-down)
 (map-key "M-`"       'projectile-find-file)

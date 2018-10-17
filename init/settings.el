@@ -5,6 +5,8 @@
 (delete-selection-mode 1)
 (cua-mode)
 
+(setq scroll-lines-count 4)
+
 (setq verilog-auto-newline nil)
 (setq-default cursor-type 'bar)
 
