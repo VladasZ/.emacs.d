@@ -28,6 +28,7 @@
    (quote
 	(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make")))
  '(python-shell-interpreter "python3")
+ '(scroll-preserve-screen-position 1)
  '(tab-width 4)
  '(treemacs-ignored-file-predicates
    (quote

@@ -14,17 +14,21 @@
 
 ; C++
 
+(defun prepare-cpp-project ()
+  (interactive)
+  (run-build-script-with-params "--prepare"))
+
 (defun build-cpp-project ()
   (interactive)
-  (run-build-script-with-params "--make"))
+  (run-build-script-with-params "--build"))
 
-(defun prepare-build-project ()
+(defun run-cpp-project ()
   (interactive)
-  (run-build-script-with-params ""))
+  (run-build-script-with-params "--run"))
 
-(defun make-project ()
+(defun clean-cpp-project ()
   (interactive)
-  (run-build-script-with-params "--make"))
+  (run-build-script-with-params "--clean"))
 
 ; Verilog
 
