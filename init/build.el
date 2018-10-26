@@ -30,6 +30,10 @@
   (interactive)
   (run-build-script-with-params "--clean"))
 
+(defun cpp-compilers-info ()
+  (interactive)
+  (run-build-script-with-params "--dump-available-compilers"))
+
 ; Verilog
 
 (defun build-verilog-with-params (params)
