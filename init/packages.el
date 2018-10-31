@@ -13,6 +13,7 @@
 		drag-stuff
 		magit
 		super-save
+		multiple-cursors
 		))
 
 (check-packages packages-list)

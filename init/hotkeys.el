@@ -30,6 +30,8 @@
 (map-key "M-<down>"    'drag-stuff-down)
 (map-key "M-`"         'projectile-find-file)
 
+(map-key "C-<next>"    'mc/mark-next-like-this)
+(map-key "C-<prior>"   'mc/mark-previous-like-this)
 (map-key "C-s"         'shrink-window)
 (map-key "C-f"         'projectile-grep)
 (map-key "C-o"         'projectile-find-file)
