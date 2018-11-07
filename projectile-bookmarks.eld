@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/.emacs.d/utils/" "~/dev/projects/testengine/" "~/dev/projects/smon/" "~/dev/projects/testengine/config/utils/" "~/dev/sand/verilog_test/")
+("~/.emacs.d/utils/" "~/.emacs.d/" "~/dev/projects/testengine/" "~/dev/projects/smon/" "~/dev/sand/verilog_test/")

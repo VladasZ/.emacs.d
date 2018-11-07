@@ -14,6 +14,7 @@
 		magit
 		super-save
 		multiple-cursors
+		iedit
 		))
 
 (check-packages packages-list)

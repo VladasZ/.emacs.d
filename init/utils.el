@@ -58,7 +58,6 @@
   (or (null string)
 	  (zerop (length string))))
 
-
 (defun my-scroll-down ()
   (interactive)
   (scroll-down scroll-lines-count))
@@ -66,3 +65,13 @@
 (defun my-scroll-up ()
   (interactive)
   (scroll-up scroll-lines-count))
+
+(defun save-and-switch-to-next-buffer ()
+  (interactive)
+  (save-buffer)
+  (switch-to-next-buffer))
+
+(defun save-and-switch-to-prev-buffer ()
+  (interactive)
+  (save-buffer)
+  (switch-to-prev-buffer))
