@@ -18,7 +18,7 @@
 (map-key "M-1"         'async-shell-command)
 (map-key "M-d"         'kill-whole-line)
 (map-key "M-s"         'shrink-window-if-larger-than-buffer)
-(map-key "M-/"         'comment-or-uncomment-region)
+(map-key "M-/"         'comment-or-uncomment-region) 
 (map-key "M-a"         'other-window)
 (map-key "M-\\"        'save-and-switch-to-next-buffer)
 (map-key "M-'"         'save-and-switch-to-prev-buffer)
@@ -29,6 +29,7 @@
 (map-key "M-<up>"      'drag-stuff-up)
 (map-key "M-<down>"    'drag-stuff-down)
 (map-key "M-`"         'projectile-find-file)
+(map-key "M-;"         'iedit-mode)
 
 (map-key "C-<next>"    'mc/mark-next-like-this)
 (map-key "C-<prior>"   'mc/mark-previous-like-this)
@@ -50,13 +51,15 @@
   (mode-key c-mode-base-map "M-p"  'prepare-cpp-project)
   (mode-key c-mode-base-map "M-b"  'build-cpp-project)
   (mode-key c-mode-base-map "M-r"  'run-cpp-project)
-  (mode-key c-mode-base-map "M-c"  'clean-cpp-project))
+  (mode-key c-mode-base-map "M-c"  'clean-cpp-project)
+  (mode-key c-mode-base-map "M-t"  'test-cpp-project))
 
 (with-eval-after-load 'cmake-mode
   (mode-key cmake-mode-map "M-p"   'prepare-cpp-project)
   (mode-key cmake-mode-map "M-b"   'build-cpp-project)
   (mode-key cmake-mode-map "M-r"   'run-cpp-project)
-  (mode-key cmake-mode-map "M-c"   'clean-cpp-project))
+  (mode-key cmake-mode-map "M-c"   'clean-cpp-project)
+  (mode-key cmake-mode-map "M-t"   'test-cpp-project))
 
 (with-eval-after-load 'python
   (mode-key python-mode-map "M-r"  'run-python-script))

@@ -3,9 +3,17 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+		cua-paste
+		electric-verilog-tick
+		overwrite-mode
 		))
 
 (setq mc/cmds-to-run-once
       '(
+		build-verilog-project
+		cua-scroll-down
 		cua-scroll-up
+		duplicate-line
+		electric-verilog-colon
+		electric-verilog-semi
 		))

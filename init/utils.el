@@ -75,3 +75,7 @@
   (interactive)
   (save-buffer)
   (switch-to-prev-buffer))
+
+(defun sinfo ()
+  (interactive)
+  (async-shell-command "~/.emacs.d/utils/Info.py"))

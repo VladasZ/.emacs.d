@@ -26,6 +26,10 @@
   (interactive)
   (run-build-script-with-params "--run"))
 
+(defun test-cpp-project ()
+  (interactive)
+  (run-build-script-with-params "--test"))
+
 (defun clean-cpp-project ()
   (interactive)
   (run-build-script-with-params "--clean"))
