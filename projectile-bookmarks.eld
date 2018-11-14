@@ -1,1 +1,1 @@
-("~/dev/projects/testengine/" "~/dev/projects/testengine/source/cpp_utils/" "~/.emacs.d/" "~/.emacs.d/utils/" "~/dev/projects/smon/" "~/dev/work/NodeFPGA/" "~/dev/sand/verilog_test/")
+("~/.emacs.d/utils/" "~/dev/projects/testengine/source/cpp_utils/" "~/.emacs.d/" "~/dev/projects/testengine/" "~/dev/projects/smon/" "~/dev/sand/verilog_test/")
