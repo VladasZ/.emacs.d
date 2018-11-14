@@ -10,6 +10,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+		build-verilog-project
 		cua-scroll-down
 		cua-scroll-up
 		duplicate-line
