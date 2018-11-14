@@ -15,7 +15,7 @@
 
 (setq path-engine (concat path-proj "/testengine"))
 
-(defun engine ()
+(defun en ()
   (interactive)
   (find-file (concat path-engine "/" path-cmake-file)))
 
