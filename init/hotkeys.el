@@ -51,13 +51,15 @@
   (mode-key c-mode-base-map "M-p"  'prepare-cpp-project)
   (mode-key c-mode-base-map "M-b"  'build-cpp-project)
   (mode-key c-mode-base-map "M-r"  'run-cpp-project)
-  (mode-key c-mode-base-map "M-c"  'clean-cpp-project))
+  (mode-key c-mode-base-map "M-c"  'clean-cpp-project)
+  (mode-key c-mode-base-map "M-t"  'test-cpp-project))
 
 (with-eval-after-load 'cmake-mode
   (mode-key cmake-mode-map "M-p"   'prepare-cpp-project)
   (mode-key cmake-mode-map "M-b"   'build-cpp-project)
   (mode-key cmake-mode-map "M-r"   'run-cpp-project)
-  (mode-key cmake-mode-map "M-c"   'clean-cpp-project))
+  (mode-key cmake-mode-map "M-c"   'clean-cpp-project)
+  (mode-key cmake-mode-map "M-t"   'test-cpp-project))
 
 (with-eval-after-load 'python
   (mode-key python-mode-map "M-r"  'run-python-script))
