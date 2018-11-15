@@ -5,6 +5,7 @@
       '(
 		cua-paste
 		electric-verilog-tick
+		indent-for-tab-command
 		overwrite-mode
 		))
 
@@ -16,4 +17,5 @@
 		duplicate-line
 		electric-verilog-colon
 		electric-verilog-semi
+		iedit-switch-to-mc-mode
 		))
