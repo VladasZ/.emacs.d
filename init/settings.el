@@ -20,9 +20,6 @@
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
 
-(if is-windows
-	(add-to-path "C:\\cygwin64\\bin;"))
-
 (if is-macos
 	(add-to-path "/usr/local/bin:"))
 
