@@ -15,6 +15,7 @@
 		super-save
 		multiple-cursors
 		iedit
+		yaml-mode
 		))
 
 (check-packages packages-list)

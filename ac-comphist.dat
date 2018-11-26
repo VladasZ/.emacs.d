@@ -1,544 +1,544 @@
-((("conan_version" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("clang_version" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("full_version" .
-   [0 0 2 0 0 0 0 0 0 0 0 0])
-  ("major_version" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("clang" .
-   [1 0 0 0 0])
-  ("VisualStudio" .
-   [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("Visual" .
-   [0 0 0 1 0 0])
-  ("Clang" .
-   [1 0 0 2 0])
-  ("CompilerBase" .
-   [0 0 0 3 0 0 0 0 0 0 1 0])
-  ("is_ide" .
-   [1 0 0 0 0 0])
-  ("_is_ide" .
-   [0 0 0 0 1 0 0])
-  ("commands" .
-   [2 0 0 0 0 0 0 0])
-  ("simple" .
-   [2 0 0 1 0 0])
-  ("version" .
-   [0 0 0 0 1 1 1])
-  ("_get_apple_version" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("_is_apple" .
-   [0 0 0 0 2 0 0 0 0])
-  ("info" .
-   [6 0 0 1])
-  ("gcc" .
+((("include" .
+   [1 0 0 0 0 0 0])
+  ("GCC" .
    [4 0 0])
-  ("check" .
-   [0 0 0 1 0])
-  ("_installed_packages" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("installed_packages" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("indexer_completed2" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("indexer_completed" .
-   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("b2_pulse_r" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("edge_detected" .
-   [0 0 1 0 0 0 0 0 0 1 0 0 0])
-  ("RISE" .
-   [1 0 0 0])
-  ("FALL" .
-   [1 0 0 0])
-  ("counter" .
-   [5 0 2 0 0 0 0])
-  ("always" .
-   [0 0 1 0 5 0])
-  ("`SEND_DATA_DELAY" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("send" .
-   [4 0 0 0])
-  ("transmitter_clock_generator" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("`TRANSMITTER_CLOCK_DELAY" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("`EVERY_SECOND_DELAY" .
-   [0 0 0 0 1 2 1 0 0 1 0 1 0 0 0 0 0 0 0])
-  ("every_second_switch" .
-   [0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("interval_switch" .
-   [0 0 0 0 0 0 1 0 1 0 0 0 0 0 0])
-  ("DELAY" .
-   [4 0 1 0 1])
-  ("signal_generator" .
-   [0 0 0 1 0 2 1 0 0 0 0 0 0 0 0 0])
-  ("switch" .
-   [2 0 0 0 0 0])
-  ("`include" .
-   [3 0 0 0 3 0 0 0])
-  ("posedge" .
-   [0 0 0 0 5 1 2])
-  ("all" .
-   [0 0 1])
-  ("drag-stuff" .
-   [0 0 0 0 2 0 0 0 0 0])
-  ("3C" .
-   [3 0])
-  ("3B" .
-   [2 0])
-  ("duration" .
-   [0 0 0 0 1 0 0 0])
-  ("_duration" .
-   [0 0 0 0 1 0 0 0 0])
-  ("time" .
-   [0 0 0 2])
-  ("_stamp" .
-   [3 0 0 0 0 1])
-  ("stamp" .
-   [1 0 0 0 0])
-  ("is-macos" .
-   [0 0 0 0 0 1 0 0])
-  ("if" .
-   [1 0])
-  ("add-to-path" .
-   [0 0 0 1 0 0 0 0 0 2 0])
-  ("getenv" .
-   [0 0 0 0 1 0])
-  ("value" .
-   [0 0 0 1 0])
-  ("setenv" .
-   [0 0 0 0 1 0])
-  ("load" .
-   [1 0 0 0])
-  ("Yank" .
-   [1 0 0 0])
-  ("Kill-ring-save" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("button" .
-   [2 0 0 0 0 0])
-  ("top_module" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("project_name" .
-   [0 0 0 0 0 1 0 0 0 0 0 0])
-  ("clk" .
-   [23 0 0])
-  ("test" .
-   [5 0 0 0])
-  ("endmodule" .
-   [0 0 0 0 0 4 1 0 0])
-  ("module" .
-   [0 0 1 0 1 0])
-  ("run-python-script" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("async-shell-command" .
-   [0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("cd" .
-   [1 0])
-  ("exists" .
-   [2 0 0 0 0 0])
-  ("Cmake" .
-   [1 0 0 0 0])
-  ("root_dir" .
-   [1 0 0 3 1 1 0 0])
-  ("full_path" .
-   [0 0 0 0 1 0 0 0 0])
-  ("path-utils" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("Duplicate" .
-   [0 0 0 2 0 0 0 0 0])
-  ("defcustom" .
-   [0 0 0 0 1 0 0 0 0])
-  ("Object" .
-   [0 0 1 0 0 0])
-  ("addObject" .
-   [0 0 1 0 0 0 0 0 0])
-  ("this" .
-   [0 0 0 1])
-  ("projectile" .
-   [0 0 0 0 0 0 1 0 0 1])
-  ("CMAKE_BINARY_DIR" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("asdfasd" .
-   [1 0 0 0 0 0 0])
-  ("File" .
-   [15 0 0 0])
-  ("not_implemented" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("Debug" .
-   [5 0 0 1 0])
-  ("browser" .
-   [2 0 0 0 1 0 0])
-  ("isWindows" .
-   [0 0 0 0 0 1 0 0 0])
-  ("print" .
-   [1 0 0 3 1])
-  ("lambda" .
-   [0 0 0 1 0 0])
-  ("say_hello" .
-   [0 0 0 1 0 0 0 0 0])
-  ("System" .
-   [0 0 2 1 0 0])
-  ("map-key" .
-   [0 0 1 6 0 0 2])
-  ("func" .
-   [1 0 0 0])
-  ("key" .
-   [1 0 0])
-  ("default" .
-   [1 0 0 0 1 0 0])
-  ("require-packages" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("pack" .
-   [2 0 0 0])
-  ("packages-list" .
-   [0 0 0 0 0 2 0 0 0 0 0 0 0])
-  ("levenstein" .
-   [0 0 0 0 1 0 0 0 0 0])
-  ("setq" .
-   [2 0 3 2])
-  ("t" .
-   [2])
-  ("check-packages" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("dolist" .
-   [1 0 0 1 0 0])
-  ("packages" .
-   [3 0 0 1 0 0 0 0])
-  ("check-package" .
-   [0 0 0 2 0 1 0 0 0 0 0 0 0])
-  ("restart-emacs" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("interactive" .
-   [1 0 0 0 5 0 0 0 0 0 1])
-  ("treemacs" .
-   [0 0 0 3 2 0 0 1])
-  ("require" .
-   [0 0 1 2 2 0 0])
-  ("~/.emacs.d/init.el" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
-   [0 0 1 0 0 0 1 0 0 0 0])
-  ("defalias" .
-   [0 0 1 1 0 0 1 3])
-  ("load-path" .
-   [0 0 1 0 0 0 0 0 0])
-  ("defun" .
-   [2 0 0 6 5])
-  ("hello" .
-   [0 0 0 1 1])
-  ("message" .
-   [1 0 0 2 1 0 1])
-  ("file" .
-   [1 0 1 0])
-  ("find-file" .
-   [0 0 1 1 0 0 1 0 0])
-  ("package" .
-   [1 0 0 0 0 1 1])
-  ("foreach" .
-   [0 0 0 0 2 0 0])
-  ("import" .
-   [0 0 1 0 8 1])
-  ("Compiler" .
-   [0 0 0 1 0 0 0 0])
-  ("name" .
-   [5 0 0 0])
-  ("webbrowser" .
-   [0 0 1 0 1 0 0 0 0 0])
-  ("Args" .
-   [4 0 3 0])
-  ("get" .
-   [2 0 1])
-  ("Browser" .
-   [0 0 0 2 0 0 0])
-  ("run" .
-   [3 0 1])
-  ("Paths" .
-   [1 0 0 1 0])
-  ("google" .
-   [1 0 0 0 0 0])
-  ("com" .
-   [3 0 0])
-  ("Shell" .
-   [4 0 0 0 0])
-  ("CONAN_LIBS_DEBUG" .
-   [0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0])
-  ("CONAN_LIBS_RELEASE" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
-  ("for" .
-   [1 0 0])
-  ("lib" .
-   [1 0 0])
-  ("endforeach" .
-   [0 0 0 1 0 0 0 0 0 0])
-  ("concat" .
-   [1 0 0 2 1 2])
-  ("path-proj" .
-   [0 0 0 0 0 0 1 0 0])
-  ("path-smon" .
-   [0 0 0 0 0 0 0 0 1])
-  ("path-cmake-file" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("get_files" .
-   [0 0 0 1 0 1 0 0 0])
-  ("files" .
-   [4 0 0 0 0])
-  ("depth" .
-   [0 0 0 1 0])
-  ("path" .
-   [18 0 0 0])
-  ("cmake_file_name" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("has_cmake_file" .
-   [0 0 0 2 0 0 0 0 0 0 0 0 0 0])
-  ("result" .
-   [1 0 0 0 0 0])
-  ("ports" .
-   [0 0 0 1 0])
-  ("shell-command" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("command" .
-   [0 0 0 0 0 4 0])
-  ("simulate" .
-   [3 0 0 0 0 0 0 0])
-  ("has" .
-   [3 0 0])
-  ("trigger" .
-   [5 0 1 0 0 1 0])
-  ("gen1" .
-   [1 0 0 0])
-  ("gen2" .
-   [1 0 0 0])
-  ("switch2" .
-   [1 0 0 0 0 0 0])
-  ("switch3" .
-   [1 0 0 0 0 0 0])
-  ("super-save" .
-   [0 0 0 0 1 1 0 0 0 0])
-  ("nil" .
-   [1 0 0])
-  ("save-buffer" .
-   [0 0 2 0 0 0 0 0 0 0 1])
-  ("build-script-path" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("params" .
-   [2 0 0 0 1 0])
-  ("run-build-script-with-params" .
-   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("windows-nt" .
-   [0 0 0 1 0 0 0 0 0 0])
-  ("with-eval-after-load" .
-   [0 0 1 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("cmake-mode" .
-   [0 0 1 0 0 1 0 0 0 0])
-  ("mode-key" .
-   [0 0 1 0 0 0 0 2])
-  ("build-cpp-project" .
-   [0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("c++-mode" .
-   [0 0 0 0 1 0 0 0])
-  ("Git" .
-   [1 0 0])
-  ("folder_name" .
-   [0 0 0 0 0 0 1 0 0 0 0])
-  ("project_path" .
-   [0 0 0 0 0 0 0 0 0 0 1 0])
-  ("build" .
-   [1 0 1 0 1])
-  ("Verilog" .
-   [3 0 0 1 0 0 0])
-  ("throw" .
-   [1 0 0 0 0])
-  ("verilog" .
-   [3 0 0 0 0 0 0])
-  ("cpp" .
-   [1 0 0])
-  ("build-verilog-with-params" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("rst" .
-   [20 0 2])
-  ("out" .
-   [13 0 0])
-  ("generators" .
-   [0 0 0 0 1 0 1 0 0 0])
-  ("every_us" .
-   [0 0 0 2 1 4 0 0])
-  ("btn1" .
-   [1 0 0 1])
-  ("add" .
-   [1 0 0])
-  ("git" .
-   [1 0 0])
-  ("push" .
-   [1 0 0 0])
-  ("output" .
-   [0 0 0 0 0 1])
-  ("clock" .
-   [3 0 0 1 1])
-  ("serial_clk" .
-   [0 0 0 0 4 0 1 0 0 1])
-  ("serial_clk_wire" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 3 0])
-  ("assign" .
-   [0 0 0 0 3 0])
-  ("`EVERY_US_DELAY" .
-   [0 0 0 0 0 0 1 0 0 1 0 0 0 0 0])
-  ("vive_sensor" .
-   [0 0 0 2 9 1 0 1 0 0 0])
-  ("begin" .
-   [0 0 0 1 2])
-  ("data_buffer" .
-   [0 0 0 0 0 1 1 0 0 0 0])
-  ("index" .
-   [23 0 0 0 0])
-  ("next" .
-   [2 0 0 0])
-  ("last_index" .
-   [0 0 1 0 2 1 0 0 0 1])
-  ("test_data_generator" .
-   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("test_data" .
-   [5 0 0 0 0 0 0 0 0])
-  ("`define" .
+  ("isClang" .
    [0 0 0 1 0 1 0])
-  ("PULSE_DURATION_PULSE" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("PULSE_DURATION_SIZE" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("PULSE_TYPE_SIZE_OF" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("completed" .
-   [2 0 0 0 2 0 3 0 1])
-  ("PULSE_TYPE_SIZE" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("is-treemacs-ignored-file" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("treemacs-ignored-types" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1])
-  ("$clog2" .
-   [0 0 0 0 0 1])
-  ("completed_wire" .
-   [0 0 0 0 0 0 0 0 0 0 0 2 1 0])
-  ("buffer" .
-   [4 0 0 0 1 0])
-  ("recognized_pulse" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("test_reg" .
-   [1 0 0 0 0 0 0 0])
-  ("signal" .
-   [4 0 0 0 0 0])
-  ("pos_counter" .
+  ("return" .
+   [0 0 0 1 1 0])
+  ("is_station_a_pulse2" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("is_station_a_pulse" .
+   [0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0])
+  ("`IS_STATION_A_PULSE" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0])
+  ("A1_PULSE_INDEX" .
+   [0 0 0 1 0 0 0 0 1 0 0 0 0 0])
+  ("`PULSE_DATA_SIZE" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("prev_value" .
+   [0 0 0 1 1 0 0 1 0 0])
+  ("PARTS_COUNT" .
    [0 0 0 0 0 0 0 1 0 0 0])
-  ("neg_counter" .
-   [0 0 0 0 0 0 1 0 0 0 0])
-  ("treemacs-mode" .
-   [0 0 0 0 1 0 1 0 0 0 0 0 0])
-  ("data" .
+  ("PACKET_BIT_SIZE" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("send_reg" .
+   [4 0 0 0 0 0 0 0])
+  ("out_data" .
+   [3 0 0 0 0 0 0 0])
+  ("pulse_duration" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("edge_detecter" .
+   [0 0 0 0 0 0 0 0 0 2 0 0 0])
+  ("prev_signal" .
+   [0 0 0 0 0 0 0 2 0 0 0])
+  ("every_s" .
+   [1 0 0 0 0 0 0])
+  ("vive_edge_detected" .
+   [0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0])
+  ("vive_pulses_per_second" .
+   [0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("transmitter_send" .
+   [0 0 0 0 0 0 0 2 0 0 0 0 0 0 1 0])
+  ("counter_wire" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("treemacs-ignored-files" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("member" .
+   [1 0 0 0 0 0])
+  ("SIZE" .
+   [2 0 0 0])
+  ("indexer" .
+   [5 0 0 0 0 0 0])
+  ("INDEXER_MODULE" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("stat" .
    [1 0 0 0])
-  ("PART_SIZE" .
-   [0 0 0 0 1 1 0 1 0])
-  ("last_delay" .
-   [0 0 0 0 0 0 0 1 0 0])
-  ("rm" .
-   [1 0])
-  ("simulation_flag" .
-   [0 0 0 0 0 0 0 0 0 1 0 1 0 0 0])
-  ("simulation_flag_file_name" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("val" .
-   [1 0 0])
-  ("`IS_SYNCHRO_PULSE" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("b_pulse" .
-   [0 0 1 0 0 0 0])
-  ("`PULSE_DELAY_INDEX" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("`IS_DELAY" .
-   [1 0 0 0 0 0 0 0 0])
-  ("pulse_delay" .
-   [1 0 0 0 0 0 0 0 0 0 1])
-  ("test_index" .
-   [7 0 0 0 0 0 0 0 0 0])
-  ("b1_pulse" .
-   [1 0 1 0 0 0 0 0])
-  ("b2_pulse" .
-   [0 0 1 0 1 0 0 0])
-  ("sme1" .
-   [2 0 0 0])
-  ("sme2" .
-   [2 0 0 0])
-  ("sh_index" .
-   [1 0 1 0 0 0 0 0])
-  ("a1_index" .
-   [1 0 0 0 0 0 0 0])
-  ("a2_pulse" .
-   [1 0 0 0 0 0 0 0])
-  ("B1_PULSE_INDEX" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("a1_pulse_r" .
-   [3 0 0 0 0 0 0 0 0 0])
-  ("a1_pulse" .
-   [1 0 0 0 0 0 0 0])
-  ("a2_pulse_r" .
+  ("pulse_wire" .
    [1 0 0 0 0 0 0 0 0 0])
   ("b1_pulse_r" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("pulse_wire" .
+  ("a2_pulse_r" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("stat" .
-   [1 0 0 0])
-  ("INDEXER_MODULE" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("indexer" .
-   [5 0 0 0 0 0 0])
-  ("SIZE" .
+  ("a1_pulse" .
+   [1 0 0 0 0 0 0 0])
+  ("a1_pulse_r" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("B1_PULSE_INDEX" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("a2_pulse" .
+   [1 0 0 0 0 0 0 0])
+  ("a1_index" .
+   [1 0 0 0 0 0 0 0])
+  ("sh_index" .
+   [1 0 1 0 0 0 0 0])
+  ("sme2" .
    [2 0 0 0])
-  ("member" .
-   [1 0 0 0 0 0])
-  ("treemacs-ignored-files" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("counter_wire" .
-   [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("transmitter_send" .
-   [0 0 0 0 0 0 0 2 0 0 0 0 0 0 1 0])
-  ("vive_pulses_per_second" .
-   [0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("vive_edge_detected" .
-   [0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0])
-  ("every_s" .
-   [1 0 0 0 0 0 0])
-  ("prev_signal" .
-   [0 0 0 0 0 0 0 2 0 0 0])
-  ("edge_detecter" .
-   [0 0 0 0 0 0 0 0 0 2 0 0 0])
-  ("pulse_duration" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("out_data" .
-   [3 0 0 0 0 0 0 0])
-  ("send_reg" .
-   [4 0 0 0 0 0 0 0])
-  ("PACKET_BIT_SIZE" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("PARTS_COUNT" .
+  ("sme1" .
+   [2 0 0 0])
+  ("b2_pulse" .
+   [0 0 1 0 1 0 0 0])
+  ("b1_pulse" .
+   [1 0 1 0 0 0 0 0])
+  ("test_index" .
+   [7 0 0 0 0 0 0 0 0 0])
+  ("pulse_delay" .
+   [1 0 0 0 0 0 0 0 0 0 1])
+  ("`IS_DELAY" .
+   [1 0 0 0 0 0 0 0 0])
+  ("`PULSE_DELAY_INDEX" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("b_pulse" .
+   [0 0 1 0 0 0 0])
+  ("`IS_SYNCHRO_PULSE" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("val" .
+   [1 0 0])
+  ("simulation_flag_file_name" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("simulation_flag" .
+   [0 0 0 0 0 0 0 0 0 1 0 1 0 0 0])
+  ("rm" .
+   [1 0])
+  ("last_delay" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("PART_SIZE" .
+   [0 0 0 0 1 1 0 1 0])
+  ("data" .
+   [1 0 0 0])
+  ("treemacs-mode" .
+   [0 0 0 0 1 0 1 0 0 0 0 0 0])
+  ("neg_counter" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("pos_counter" .
    [0 0 0 0 0 0 0 1 0 0 0])
-  ("prev_value" .
-   [0 0 0 1 1 0 0 1 0 0])
-  ("`PULSE_DATA_SIZE" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("A1_PULSE_INDEX" .
-   [0 0 0 1 0 0 0 0 1 0 0 0 0 0])
-  ("`IS_STATION_A_PULSE" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0])
-  ("is_station_a_pulse" .
-   [0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0])
-  ("is_station_a_pulse2" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("return" .
-   [0 0 0 1 1 0])
-  ("isClang" .
+  ("signal" .
+   [4 0 0 0 0 0])
+  ("test_reg" .
+   [1 0 0 0 0 0 0 0])
+  ("recognized_pulse" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("buffer" .
+   [4 0 0 0 1 0])
+  ("completed_wire" .
+   [0 0 0 0 0 0 0 0 0 0 0 2 1 0])
+  ("$clog2" .
+   [0 0 0 0 0 1])
+  ("treemacs-ignored-types" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1])
+  ("is-treemacs-ignored-file" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("PULSE_TYPE_SIZE" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("completed" .
+   [2 0 0 0 2 0 3 0 1])
+  ("PULSE_TYPE_SIZE_OF" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("PULSE_DURATION_SIZE" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("PULSE_DURATION_PULSE" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("`define" .
    [0 0 0 1 0 1 0])
-  ("GCC" .
+  ("test_data" .
+   [5 0 0 0 0 0 0 0 0])
+  ("test_data_generator" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("last_index" .
+   [0 0 1 0 2 1 0 0 0 1])
+  ("next" .
+   [2 0 0 0])
+  ("index" .
+   [23 0 0 0 0])
+  ("data_buffer" .
+   [0 0 0 0 0 1 1 0 0 0 0])
+  ("begin" .
+   [0 0 0 1 2])
+  ("vive_sensor" .
+   [0 0 0 2 9 1 0 1 0 0 0])
+  ("`EVERY_US_DELAY" .
+   [0 0 0 0 0 0 1 0 0 1 0 0 0 0 0])
+  ("assign" .
+   [0 0 0 0 3 0])
+  ("serial_clk_wire" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 3 0])
+  ("serial_clk" .
+   [0 0 0 0 4 0 1 0 0 1])
+  ("clock" .
+   [3 0 0 1 1])
+  ("output" .
+   [0 0 0 0 0 1])
+  ("push" .
+   [1 0 0 0])
+  ("git" .
+   [1 0 0])
+  ("add" .
+   [1 0 0])
+  ("btn1" .
+   [1 0 0 1])
+  ("every_us" .
+   [0 0 0 2 1 4 0 0])
+  ("generators" .
+   [0 0 0 0 1 0 1 0 0 0])
+  ("out" .
+   [13 0 0])
+  ("rst" .
+   [20 0 2])
+  ("build-verilog-with-params" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cpp" .
+   [1 0 0])
+  ("verilog" .
+   [3 0 0 0 0 0 0])
+  ("throw" .
+   [1 0 0 0 0])
+  ("Verilog" .
+   [3 0 0 1 0 0 0])
+  ("build" .
+   [1 0 1 0 1])
+  ("project_path" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("folder_name" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("Git" .
+   [1 0 0])
+  ("c++-mode" .
+   [0 0 0 0 1 0 0 0])
+  ("build-cpp-project" .
+   [0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("mode-key" .
+   [0 0 1 0 0 0 0 2])
+  ("cmake-mode" .
+   [0 0 1 0 0 1 0 0 0 0])
+  ("with-eval-after-load" .
+   [0 0 1 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("windows-nt" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("run-build-script-with-params" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("params" .
+   [2 0 0 0 1 0])
+  ("build-script-path" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("save-buffer" .
+   [0 0 2 0 0 0 0 0 0 0 1])
+  ("nil" .
+   [1 0 0])
+  ("super-save" .
+   [0 0 0 0 1 1 0 0 0 0])
+  ("switch3" .
+   [1 0 0 0 0 0 0])
+  ("switch2" .
+   [1 0 0 0 0 0 0])
+  ("gen2" .
+   [1 0 0 0])
+  ("gen1" .
+   [1 0 0 0])
+  ("trigger" .
+   [5 0 1 0 0 1 0])
+  ("has" .
+   [3 0 0])
+  ("simulate" .
+   [3 0 0 0 0 0 0 0])
+  ("command" .
+   [0 0 0 0 0 4 0])
+  ("shell-command" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("ports" .
+   [0 0 0 1 0])
+  ("result" .
+   [1 0 0 0 0 0])
+  ("has_cmake_file" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("cmake_file_name" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("path" .
+   [18 0 0 0])
+  ("depth" .
+   [0 0 0 1 0])
+  ("files" .
+   [4 0 0 0 0])
+  ("get_files" .
+   [0 0 0 1 0 1 0 0 0])
+  ("path-cmake-file" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("path-smon" .
+   [0 0 0 0 0 0 0 0 1])
+  ("path-proj" .
+   [0 0 0 0 0 0 1 0 0])
+  ("concat" .
+   [1 0 0 2 1 2])
+  ("endforeach" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("lib" .
+   [1 0 0])
+  ("for" .
+   [1 0 0])
+  ("CONAN_LIBS_RELEASE" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
+  ("CONAN_LIBS_DEBUG" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0])
+  ("Shell" .
+   [4 0 0 0 0])
+  ("com" .
+   [3 0 0])
+  ("google" .
+   [1 0 0 0 0 0])
+  ("Paths" .
+   [1 0 0 1 0])
+  ("run" .
+   [3 0 1])
+  ("Browser" .
+   [0 0 0 2 0 0 0])
+  ("get" .
+   [2 0 1])
+  ("Args" .
+   [4 0 3 0])
+  ("webbrowser" .
+   [0 0 1 0 1 0 0 0 0 0])
+  ("name" .
+   [5 0 0 0])
+  ("Compiler" .
+   [0 0 0 1 0 0 0 0])
+  ("import" .
+   [0 0 1 0 8 1])
+  ("foreach" .
+   [0 0 0 0 2 0 0])
+  ("package" .
+   [1 0 0 0 0 1 1])
+  ("find-file" .
+   [0 0 1 1 0 0 1 0 0])
+  ("file" .
+   [1 0 1 0])
+  ("message" .
+   [1 0 0 2 1 0 1])
+  ("hello" .
+   [0 0 0 1 1])
+  ("defun" .
+   [2 0 0 6 5])
+  ("load-path" .
+   [0 0 1 0 0 0 0 0 0])
+  ("defalias" .
+   [0 0 1 1 0 0 1 3])
+  ("add-to-list" .
+   [0 0 1 0 0 0 1 0 0 0 0])
+  ("~/.emacs.d/init.el" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 1 2 2 0 0])
+  ("treemacs" .
+   [0 0 0 3 2 0 0 1])
+  ("interactive" .
+   [1 0 0 0 5 0 0 0 0 0 1])
+  ("restart-emacs" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("check-package" .
+   [0 0 0 2 0 1 0 0 0 0 0 0 0])
+  ("packages" .
+   [3 0 0 1 0 0 0 0])
+  ("dolist" .
+   [1 0 0 1 0 0])
+  ("check-packages" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("t" .
+   [2])
+  ("setq" .
+   [2 0 3 2])
+  ("levenstein" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("packages-list" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0])
+  ("pack" .
+   [2 0 0 0])
+  ("require-packages" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("default" .
+   [1 0 0 0 1 0 0])
+  ("key" .
+   [1 0 0])
+  ("func" .
+   [1 0 0 0])
+  ("map-key" .
+   [0 0 1 6 0 0 2])
+  ("System" .
+   [0 0 2 1 0 0])
+  ("say_hello" .
+   [0 0 0 1 0 0 0 0 0])
+  ("lambda" .
+   [0 0 0 1 0 0])
+  ("print" .
+   [1 0 0 3 1])
+  ("isWindows" .
+   [0 0 0 0 0 1 0 0 0])
+  ("browser" .
+   [2 0 0 0 1 0 0])
+  ("Debug" .
+   [5 0 0 1 0])
+  ("not_implemented" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("File" .
+   [15 0 0 0])
+  ("asdfasd" .
+   [1 0 0 0 0 0 0])
+  ("CMAKE_BINARY_DIR" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("projectile" .
+   [0 0 0 0 0 0 1 0 0 1])
+  ("this" .
+   [0 0 0 1])
+  ("addObject" .
+   [0 0 1 0 0 0 0 0 0])
+  ("Object" .
+   [0 0 1 0 0 0])
+  ("defcustom" .
+   [0 0 0 0 1 0 0 0 0])
+  ("Duplicate" .
+   [0 0 0 2 0 0 0 0 0])
+  ("path-utils" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("full_path" .
+   [0 0 0 0 1 0 0 0 0])
+  ("root_dir" .
+   [1 0 0 3 1 1 0 0])
+  ("Cmake" .
+   [1 0 0 0 0])
+  ("exists" .
+   [2 0 0 0 0 0])
+  ("cd" .
+   [1 0])
+  ("async-shell-command" .
+   [0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("run-python-script" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("module" .
+   [0 0 1 0 1 0])
+  ("endmodule" .
+   [0 0 0 0 0 4 1 0 0])
+  ("test" .
+   [5 0 0 0])
+  ("clk" .
+   [23 0 0])
+  ("project_name" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("top_module" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("button" .
+   [2 0 0 0 0 0])
+  ("Kill-ring-save" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("Yank" .
+   [1 0 0 0])
+  ("load" .
+   [1 0 0 0])
+  ("setenv" .
+   [0 0 0 0 1 0])
+  ("value" .
+   [0 0 0 1 0])
+  ("getenv" .
+   [0 0 0 0 1 0])
+  ("add-to-path" .
+   [0 0 0 1 0 0 0 0 0 2 0])
+  ("if" .
+   [1 0])
+  ("is-macos" .
+   [0 0 0 0 0 1 0 0])
+  ("stamp" .
+   [1 0 0 0 0])
+  ("_stamp" .
+   [3 0 0 0 0 1])
+  ("time" .
+   [0 0 0 2])
+  ("_duration" .
+   [0 0 0 0 1 0 0 0 0])
+  ("duration" .
+   [0 0 0 0 1 0 0 0])
+  ("3B" .
+   [2 0])
+  ("3C" .
+   [3 0])
+  ("drag-stuff" .
+   [0 0 0 0 2 0 0 0 0 0])
+  ("all" .
+   [0 0 1])
+  ("posedge" .
+   [0 0 0 0 5 1 2])
+  ("`include" .
+   [3 0 0 0 3 0 0 0])
+  ("switch" .
+   [2 0 0 0 0 0])
+  ("signal_generator" .
+   [0 0 0 1 0 2 1 0 0 0 0 0 0 0 0 0])
+  ("DELAY" .
+   [4 0 1 0 1])
+  ("interval_switch" .
+   [0 0 0 0 0 0 1 0 1 0 0 0 0 0 0])
+  ("every_second_switch" .
+   [0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("`EVERY_SECOND_DELAY" .
+   [0 0 0 0 1 2 1 0 0 1 0 1 0 0 0 0 0 0 0])
+  ("`TRANSMITTER_CLOCK_DELAY" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("transmitter_clock_generator" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("send" .
+   [4 0 0 0])
+  ("`SEND_DATA_DELAY" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("always" .
+   [0 0 1 0 5 0])
+  ("counter" .
+   [5 0 2 0 0 0 0])
+  ("FALL" .
+   [1 0 0 0])
+  ("RISE" .
+   [1 0 0 0])
+  ("edge_detected" .
+   [0 0 1 0 0 0 0 0 0 1 0 0 0])
+  ("b2_pulse_r" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("indexer_completed" .
+   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("indexer_completed2" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("installed_packages" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("_installed_packages" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("check" .
+   [0 0 0 1 0])
+  ("gcc" .
    [4 0 0])
-  ("include" .
-   [1 0 0 0 0 0 0])))
+  ("info" .
+   [6 0 0 1])
+  ("_is_apple" .
+   [0 0 0 0 2 0 0 0 0])
+  ("_get_apple_version" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("version" .
+   [0 0 0 0 1 1 1])
+  ("simple" .
+   [2 0 0 1 0 0])
+  ("commands" .
+   [2 0 0 0 0 0 0 0])
+  ("_is_ide" .
+   [0 0 0 0 1 0 0])
+  ("is_ide" .
+   [1 0 0 0 0 0])
+  ("CompilerBase" .
+   [0 0 0 3 0 0 0 0 0 0 1 0])
+  ("Clang" .
+   [1 0 0 2 0])
+  ("Visual" .
+   [0 0 0 1 0 0])
+  ("VisualStudio" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("clang" .
+   [1 0 0 0 0])
+  ("major_version" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("full_version" .
+   [0 0 2 0 0 0 0 0 0 0 0 0])
+  ("clang_version" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("conan_version" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])))

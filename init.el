@@ -23,7 +23,7 @@
 	("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-	(iedit multiple-cursors ## find-file-in-project super-save levenshtein magit pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs monokai-theme fsm auto-complete)))
+	(yaml-mode iedit multiple-cursors ## find-file-in-project super-save levenshtein magit pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs monokai-theme fsm auto-complete)))
  '(projectile-globally-ignored-directories
    (quote
 	(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make")))
