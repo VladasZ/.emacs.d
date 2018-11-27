@@ -16,6 +16,7 @@
 		multiple-cursors
 		iedit
 		yaml-mode
+		dumb-jump
 		))
 
 (check-packages packages-list)

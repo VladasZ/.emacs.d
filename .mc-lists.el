@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
 		cua-paste
+		electric-verilog-tab
 		electric-verilog-tick
 		indent-for-tab-command
 		overwrite-mode

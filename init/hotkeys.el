@@ -30,6 +30,7 @@
 (map-key "M-<down>"    'drag-stuff-down)
 (map-key "M-`"         'projectile-find-file)
 (map-key "M-;"         'iedit-mode)
+(map-key "M-j"         'dumb-jump-go)
 
 (map-key "C-<next>"    'mc/mark-next-like-this)
 (map-key "C-<prior>"   'mc/mark-previous-like-this)
