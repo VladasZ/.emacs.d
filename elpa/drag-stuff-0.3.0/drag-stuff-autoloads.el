@@ -32,11 +32,6 @@ Drag stuff ARG lines to the left.
 (autoload 'drag-stuff-mode "drag-stuff" "\
 Drag stuff around.
 
-If called interactively, enable Drag-Stuff mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
 \(fn &optional ARG)" t nil)
 
 (autoload 'turn-on-drag-stuff-mode "drag-stuff" "\

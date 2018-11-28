@@ -58,11 +58,6 @@ or call the function `ace-window-display-mode'.")
 (autoload 'ace-window-display-mode "ace-window" "\
 Minor mode for showing the ace window key in the mode line.
 
-If called interactively, enable Ace-Window-Display mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ace-window" '("ace-window-mode" "aw-")))

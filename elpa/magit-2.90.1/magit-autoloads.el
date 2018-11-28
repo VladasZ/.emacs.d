@@ -1488,6 +1488,15 @@ Show log for the definition at point.
 
 \(fn FILE FN REV)" t nil)
 
+(autoload 'magit-log-merged "magit-log" "\
+Show log for the merge of COMMIT into BRANCH.
+More precisely, find merge commit M that brought COMMIT into
+BRANCH, and show the log of the range \"M^..M\".  This command
+requires git-when-merged, which is available from
+https://github.com/mhagger/git-when-merged.
+
+\(fn COMMIT BRANCH &optional ARGS FILES)" t nil)
+
 (autoload 'magit-reflog-current "magit-log" "\
 Display the reflog of the current branch.
 
@@ -1609,7 +1618,7 @@ Abort the current merge operation.
 ;;;### (autoloads nil "magit-mode" "magit-mode.el" (0 0 0 0))
 ;;; Generated autoloads from magit-mode.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-mode" '("disable-magit-save-buffers" "inhibit-magit-refresh" "magit-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-mode" '("magit-" "disable-magit-save-buffers" "inhibit-magit-refresh")))
 
 ;;;***
 
@@ -2600,11 +2609,6 @@ for a description of this minor mode.")
 (autoload 'magit-wip-after-apply-mode "magit-wip" "\
 Commit to work-in-progress refs.
 
-If called interactively, enable Magit-Wip-After-Apply mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
 After applying a change using any \"apply variant\"
 command (apply, stage, unstage, discard, and reverse) commit the
 affected files to the current wip refs.  For each branch there
@@ -2623,11 +2627,6 @@ for a description of this minor mode.")
 
 (autoload 'magit-wip-before-change-mode "magit-wip" "\
 Commit to work-in-progress refs before certain destructive changes.
-
-If called interactively, enable Magit-Wip-Before-Change mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
 
 Before invoking a revert command or an \"apply variant\"
 command (apply, stage, unstage, discard, and reverse) commit the

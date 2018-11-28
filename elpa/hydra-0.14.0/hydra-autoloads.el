@@ -63,7 +63,7 @@ result of `defhydra'.
 
 (function-put 'defhydra 'lisp-indent-function 'defun)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hydra" '("defhydradio" "hydra-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hydra" '("hydra-" "defhydradio")))
 
 ;;;***
 
