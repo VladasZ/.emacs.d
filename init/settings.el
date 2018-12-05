@@ -40,3 +40,5 @@
   (if (string-is-empty extension)
 	(member file treemacs-ignored-files)
 	(member (file-name-extension file) treemacs-ignored-types)))
+
+(setq make-backup-files nil)
