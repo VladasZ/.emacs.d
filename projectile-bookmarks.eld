@@ -1,1 +1,1 @@
-("~/Downloads/adamgreen-gcc4mbed-7d79ef3/samples/" "~/dev/sand/stm32_discovery_arm_gcc/" "~/dev/sand/arm/" "~/dev/projects/smon/" "~/dev/projects/testengine/" "~/.emacs.d/utils/" "~/.emacs.d/" "~/dev/sand/verilog_test/" "~/dev/projects/testengine/source/cpp_utils/")
+("~/dev/projects/testengine/" "~/.emacs.d/utils/" "~/dev/work/NodeFPGA/" "~/.emacs.d/" "~/dev/sand/arm/" "~/dev/projects/smon/" "~/dev/sand/verilog_test/" "~/dev/projects/testengine/source/cpp_utils/")
