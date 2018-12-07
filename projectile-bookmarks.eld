@@ -1,1 +1,1 @@
-("~/dev/projects/testengine/" "~/.emacs.d/" "~/dev/sand/verilog_test/" "~/dev/projects/testengine/source/cpp_utils/" "~/.emacs.d/utils/" "~/dev/sand/arm/")
+("~/Downloads/adamgreen-gcc4mbed-7d79ef3/samples/" "~/dev/sand/stm32_discovery_arm_gcc/" "~/dev/sand/arm/" "~/dev/projects/smon/" "~/dev/projects/testengine/" "~/.emacs.d/utils/" "~/.emacs.d/" "~/dev/sand/verilog_test/" "~/dev/projects/testengine/source/cpp_utils/")
