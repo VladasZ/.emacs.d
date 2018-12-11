@@ -17,7 +17,7 @@
  '(custom-safe-themes
    (quote
 	("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default)))
- '(linum-format " %d " t)
+ '(linum-format " %d ")
  '(nrepl-message-colors
    (quote
 	("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))

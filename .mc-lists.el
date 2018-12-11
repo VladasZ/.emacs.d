@@ -3,6 +3,10 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+		c-electric-brace
+		c-electric-paren
+		c-electric-semi&comma
+		c-indent-line-or-region
 		cua-paste
 		electric-verilog-tab
 		electric-verilog-tick
