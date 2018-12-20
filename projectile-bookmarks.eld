@@ -1,1 +1,1 @@
-("~/dev/projects/testengine/" "~/.emacs.d/" "~/.emacs.d/utils/" "~/dev/sand/arm/" "~/dev/projects/smon/" "~/dev/sand/verilog_test/" "~/dev/projects/testengine/source/cpp_utils/")
+("~/.emacs.d/shell/" "~/dev/work/NodeFPGA/" "~/dev/work/NodeFPGA/build_tools/" "~/.emacs.d/" "~/dev/projects/testengine/" "~/dev/work/NodeFPGA/arm/source/cpp_utils/" "~/dev/projects/smon/source/cpp_utils/" "~/dev/projects/smon/" "~/Downloads/Nucleo_blink_led/" "~/dev/work/NodeFPGA/calculations/build_tools/" "~/dev/projects/testengine/source/cpp_utils/")

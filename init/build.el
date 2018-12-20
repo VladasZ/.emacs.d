@@ -1,5 +1,5 @@
 
-(setq build-script-path (expand-home-path "~/.emacs.d/utils/Build.py"))
+(setq build-script-path (expand-home-path "~/dev/projects/testengine/build_tools/Build.py"))
 
 (defun run-build-script-with-params (params)
   (save-buffer)
