@@ -17,3 +17,5 @@
 (defalias 'stat 'magit-status)
 (defalias 'push 'magit-push)
 (defalias 'swb  'split-window-below)
+(defalias 'ta   'treemacs-add-project-to-workspace)
+(defalias 'tr   'treemacs-remove-project-from-workspace)

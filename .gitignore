@@ -2,7 +2,7 @@ auto-save-list
 backups
 *~
 .places
-session.*
+session.10*
 tramp
 #elpa
 swank

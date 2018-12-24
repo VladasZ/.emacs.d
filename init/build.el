@@ -1,9 +1,12 @@
 
-(setq build-script-path (expand-home-path "~/dev/projects/testengine/build_tools/Build.py"))
+(defun build-script-path ()
+  (expand-home-path (concat (projectile-project-root) "build_tools/Build.py")))
 
 (defun run-build-script-with-params (params)
   (save-buffer)
-  (async-shell-command (concat python-command build-script-path " " params)))
+  (message (build-script-path))
+  (message params)
+  (async-shell-command (concat python-command (build-script-path) " " params)))
 
 ; Python
 

@@ -33,8 +33,16 @@
   (interactive)
   (find-file (concat path-service "/" path-cmake-file)))
 
-(setq path-verilog (concat path-work "/NodeFPGA"))
+(setq path-node-fpga (concat path-work "/NodeFPGA"))
 
 (defun ver ()
   (interactive)
-  (find-file (concat path-verilog "/top.sv")))
+  (find-file (concat path-node-fpga "/FPGA/top.sv")))
+
+(defun arm ()
+  (interactive)
+  (find-file (concat path-node-fpga "/arm/main.cpp")))
+
+(defun cal ()
+  (interactive)
+  (find-file (concat path-node-fpga "/calculations/source/sand/main.cpp")))
