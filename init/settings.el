@@ -42,3 +42,9 @@
 	(member (file-name-extension file) treemacs-ignored-types)))
 
 (setq make-backup-files nil)
+
+
+(setenv "PATH"
+  (concat
+   "/home/vladas/dev/tools/gcc-arm-none-eabi-8-2018-q4-major/bin" ":"
+   (getenv "PATH")))

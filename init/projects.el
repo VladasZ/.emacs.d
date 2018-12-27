@@ -39,7 +39,7 @@
   (interactive)
   (find-file (concat path-node-fpga "/FPGA/top.sv")))
 
-(defun arm ()
+(defun ar ()
   (interactive)
   (find-file (concat path-node-fpga "/arm/main.cpp")))
 

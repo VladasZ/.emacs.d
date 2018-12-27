@@ -17,10 +17,12 @@
 (setq mc/cmds-to-run-once
       '(
 		build-verilog-project
+		c-electric-pound
 		cua-scroll-down
 		cua-scroll-up
 		duplicate-line
 		electric-verilog-colon
 		electric-verilog-semi
 		iedit-switch-to-mc-mode
+		run-python-script
 		))

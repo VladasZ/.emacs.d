@@ -19,3 +19,4 @@
 (defalias 'swb  'split-window-below)
 (defalias 'ta   'treemacs-add-project-to-workspace)
 (defalias 'tr   'treemacs-remove-project-from-workspace)
+(defalias 'trn  'treemacs-rename)
