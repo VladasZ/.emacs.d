@@ -33,13 +33,16 @@
                     :height  font-size)
 
 (setq treemacs-ignored-types '("vcd" "out" "asc" "zip" "bin" "blif" "dat" "cache" "eld"))
-(setq treemacs-ignored-files '(".git" ".cache" "elpa" ".gitmodules" "__pycache__" "auto-save-list" "simulation_flag.v" "session.10"))
+(setq treemacs-ignored-files '(".git" ".cache" "elpa" ".gitmodules" "__pycache__" "auto-save-list" "simulation_flag.v"))
+(setq treemacs-ignored-parts "session.10")
 
 (defun is-treemacs-ignored-file (file _)
   (setq extension (file-name-extension file))
   (if (string-is-empty extension)
 	(member file treemacs-ignored-files)
-	(member (file-name-extension file) treemacs-ignored-types)))
+	(or (member (file-name-extension file) treemacs-ignored-types)
+		(string-contains file treemacs-ignored-parts))))
+		
 
 (setq make-backup-files nil)
 

@@ -79,3 +79,6 @@
 (defun sinfo ()
   (interactive)
   (async-shell-command "~/.emacs.d/utils/Info.py"))
+
+(defun string-contains (str part)
+  (string-match-p (regexp-quote part) str))
