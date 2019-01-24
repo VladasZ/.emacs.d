@@ -4,9 +4,12 @@
 (setq mc/cmds-to-run-for-all
       '(
 		c-electric-brace
+		c-electric-lt-gt
 		c-electric-paren
 		c-electric-semi&comma
+		c-electric-slash
 		c-indent-line-or-region
+		cua--prefix-override-handler
 		cua-paste
 		electric-verilog-tab
 		electric-verilog-tick
@@ -18,11 +21,16 @@
       '(
 		build-verilog-project
 		c-electric-pound
+		c-electric-star
 		cua-scroll-down
 		cua-scroll-up
 		duplicate-line
 		electric-verilog-colon
 		electric-verilog-semi
 		iedit-switch-to-mc-mode
+		my-scroll-down
+		my-scroll-up
+		projectile-grep
 		run-python-script
+		run-verilog-project
 		))

@@ -35,7 +35,7 @@
 
 (setq path-node-fpga (concat path-work "/NodeFPGA"))
 
-(defun ver ()
+(defun er ()
   (interactive)
   (find-file (concat path-node-fpga "/FPGA/top.sv")))
 
@@ -43,6 +43,6 @@
   (interactive)
   (find-file (concat path-node-fpga "/arm/main.cpp")))
 
-(defun cal ()
+(defun ca ()
   (interactive)
-  (find-file (concat path-node-fpga "/calculations/source/sand/main.cpp")))
+  (find-file (concat path-node-fpga "/calculations/source/sand/calculation_test.hpp")))
