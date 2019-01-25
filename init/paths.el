@@ -7,6 +7,7 @@
 
 (setq path-dev "~/dev")
 (setq path-work (concat path-dev "/work"))
+(setq path-tes (concat path-work "/tes"))
 (setq path-proj (concat path-dev "/projects"))
 (setq path-sand (concat path-dev "/sand"))
 

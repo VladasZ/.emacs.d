@@ -27,13 +27,13 @@
   (find-file (concat path-smon "/" path-cmake-file)))
 
 
-(setq path-service (concat path-work "/service"))
+(setq path-service (concat path-tes "/service"))
 
 (defun tesla ()
   (interactive)
   (find-file (concat path-service "/" path-cmake-file)))
 
-(setq path-node-fpga (concat path-work "/NodeFPGA"))
+(setq path-node-fpga (concat path-tes "/NodeFPGA"))
 
 (defun er ()
   (interactive)
