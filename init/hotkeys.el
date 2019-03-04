@@ -5,6 +5,18 @@
 (defun mode-key (mode key func)
   (define-key mode (kbd key) func))
 
+(when (eq system-type 'darwin) 
+  (setq mac-option-modifier 'control)
+  (setq mac-command-modifier 'meta)
+  (global-set-key [kp-delete] 'delete-char)
+  )
+
+(map-key "["  'move-beginning-of-line)
+(map-key "'"  'move-end-of-line)
+
+(map-key "]"      'my-scroll-down)
+(map-key "\\"     'my-scroll-up)
+
 (global-set-key [home] 'move-beginning-of-line)
 (global-set-key [end]  'move-end-of-line)
 

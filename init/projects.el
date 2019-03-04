@@ -12,7 +12,6 @@
   (interactive)
   (find-file (concat path-utils "/" "Build.py")))
 
-
 (setq path-engine (concat path-proj "/testengine"))
 
 (defun en ()

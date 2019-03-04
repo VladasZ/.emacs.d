@@ -48,6 +48,10 @@
 
 
 (setenv "PATH"
-  (concat
-   "/home/vladas/dev/tools/gcc-arm-none-eabi-8-2018-q4-major/bin" ":"
+  (concat "/opt/local/bin" ":"
    (getenv "PATH")))
+
+;; (setenv "PATH"
+;;   (concat
+;;    "/Users/vladas/dev/tools/gcc-arm-none-eabi/bin" ":"
+;;    (getenv "PATH")))
