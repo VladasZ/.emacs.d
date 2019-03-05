@@ -13,9 +13,13 @@
 
 (map-key "["  'move-beginning-of-line)
 (map-key "'"  'move-end-of-line)
+(map-key "]"  'my-scroll-down)
+(map-key "\\" 'my-scroll-up)
 
-(map-key "]"      'my-scroll-down)
-(map-key "\\"     'my-scroll-up)
+(map-key "M-["  (lambda () (interactive) (insert "[" )))
+(map-key "M-'"  (lambda () (interactive) (insert "'" )))
+(map-key "M-]"  (lambda () (interactive) (insert "]" )))
+(map-key "M-\\" (lambda () (interactive) (insert "\\")))
 
 (global-set-key [home] 'move-beginning-of-line)
 (global-set-key [end]  'move-end-of-line)
@@ -23,17 +27,14 @@
 (map-key "<next>"      'my-scroll-up)
 (map-key "<prior>"     'my-scroll-down)
 
-(map-key "M-<next>"    'scroll-up)
-(map-key "M-<prior>"   'scroll-down)
-
 (map-key "M-e"         'eval-buffer)
 (map-key "M-1"         'async-shell-command)
 (map-key "M-d"         'kill-whole-line)
 (map-key "M-s"         'shrink-window-if-larger-than-buffer)
 (map-key "M-/"         'comment-or-uncomment-region) 
 (map-key "M-a"         'other-window)
-(map-key "M-\\"        'save-and-switch-to-next-buffer)
-(map-key "M-'"         'save-and-switch-to-prev-buffer)
+(map-key "M-."         'save-and-switch-to-next-buffer)
+(map-key "M-,"         'save-and-switch-to-prev-buffer)
 (map-key "M-<right>"   'windmove-right)	
 (map-key "ESC <right>" 'windmove-right)	
 (map-key "M-<left>"    'windmove-left)
@@ -43,6 +44,7 @@
 (map-key "M-`"         'projectile-find-file)
 (map-key "M-;"         'iedit-mode)
 (map-key "M-j"         'dumb-jump-go)
+
 
 (map-key "C-<next>"    'mc/mark-next-like-this)
 (map-key "C-<prior>"   'mc/mark-previous-like-this)
@@ -72,7 +74,8 @@
   (mode-key cmake-mode-map "M-b"   'build-cpp-project)
   (mode-key cmake-mode-map "M-r"   'run-cpp-project)
   (mode-key cmake-mode-map "M-c"   'clean-cpp-project)
-  (mode-key cmake-mode-map "M-t"   'test-cpp-project))
+  (mode-key cmake-mode-map "M-t"   'test-cpp-project)
+  (mode-key cmake-mode-map "M-m"   'run-cmake))
 
 (with-eval-after-load 'python
   (mode-key python-mode-map "M-r"  'run-python-script))

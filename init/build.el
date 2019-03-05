@@ -8,11 +8,17 @@
   (message params)
   (async-shell-command (concat python-command (build-script-path) " " params)))
 
+; CMake
+
+(defun run-cmake (&optional path)
+  (interactive)
+  (async-shell-command (concat "cmake " (if path path "." ))))
+
 ; Python
 
 (defun run-python-script ()
   (interactive)
-  (save-buffer)
+  (Save-buffer)
   (async-shell-command (concat python-command (buffer-file-name (current-buffer)))))
 
 ; C++

@@ -46,7 +46,6 @@
 
 (setq make-backup-files nil)
 
-
 (setenv "PATH"
   (concat "/opt/local/bin" ":"
    (getenv "PATH")))
