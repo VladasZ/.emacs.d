@@ -51,7 +51,7 @@
   (concat "/opt/local/bin" ":"
    (getenv "PATH")))
 
-;; (setenv "PATH"
-;;   (concat
-;;    "/Users/vladas/dev/tools/gcc-arm-none-eabi/bin" ":"
-;;    (getenv "PATH")))
+(setenv "PATH"
+  (concat
+   "/Users/vladas/dev/tools/gcc-arm-none-eabi/bin" ":"
+   (getenv "PATH")))
