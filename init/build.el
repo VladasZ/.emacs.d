@@ -12,6 +12,7 @@
 
 (defun run-cmake (&optional path)
   (interactive)
+  (save-buffer)
   (async-shell-command (concat "cmake " (if path path "." ))))
 
 ; Python

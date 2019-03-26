@@ -32,10 +32,7 @@
 (map-key "M-;"         'iedit-mode)
 (map-key "M-j"         'dumb-jump-go)
 (map-key "M-z"         'undo)
-(map-key "M-c"         'kill-ring-save)
-(map-key "M-v"         'clipboard-yank)
 (map-key "M-s"         'save-buffer)
-
 
 (map-key "C-<next>"    'mc/mark-next-like-this)
 (map-key "C-<prior>"   'mc/mark-previous-like-this)
