@@ -34,3 +34,4 @@
 (defun buffers-file-list ()
   (mapcar (function buffer-file-name) (buffer-list)))
 
+(message "Hello")
