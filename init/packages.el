@@ -11,7 +11,6 @@
 		cmake-mode
 		monokai-theme
 		drag-stuff
-		magit
 		super-save
 		multiple-cursors
 		iedit
