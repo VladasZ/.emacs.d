@@ -18,7 +18,7 @@
 
 (defun run-python-script ()
   (interactive)
-  (Save-buffer)
+  (save-buffer)
   (async-shell-command (concat python-command (buffer-file-name (current-buffer)))))
 
 ; C++

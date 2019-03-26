@@ -18,9 +18,7 @@
 (map-key "<prior>"     'my-scroll-down)
 
 (map-key "M-e"         'eval-buffer)
-(map-key "M-1"         'async-shell-command)
 (map-key "M-d"         'kill-whole-line)
-(map-key "M-s"         'shrink-window-if-larger-than-buffer)
 (map-key "M-/"         'comment-or-uncomment-region) 
 (map-key "M-a"         'other-window)
 (map-key "M-."         'save-and-switch-to-next-buffer)
@@ -31,22 +29,21 @@
 (map-key "ESC <left>"  'windmove-left)
 (map-key "M-<up>"      'ff-find-other-file)
 (map-key "M-<down>"    'ff-find-other-file)
-(map-key "M-`"         'projectile-find-file)
 (map-key "M-;"         'iedit-mode)
 (map-key "M-j"         'dumb-jump-go)
+(map-key "M-z"         'undo)
+(map-key "M-c"         'kill-ring-save)
+(map-key "M-v"         'clipboard-yank)
+(map-key "M-s"         'save-buffer)
 
 
 (map-key "C-<next>"    'mc/mark-next-like-this)
 (map-key "C-<prior>"   'mc/mark-previous-like-this)
 (map-key "C-s"         'shrink-window)
-(map-key "C-f"         'projectile-grep)
-(map-key "C-o"         'projectile-find-file)
-(map-key "C-z"         'undo)
 (map-key "C-q"         'kill-buffer-and-window)
 (map-key "C-<up>"      'drag-stuff-up)
 (map-key "C-<down>"    'drag-stuff-down)
 (map-key "C-d"         'duplicate-line)
-(map-key "C-n"         'find-file)
 (map-key "C-a"         'mark-whole-buffer)
 
 (with-eval-after-load 'treemacs-mode
