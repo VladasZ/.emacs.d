@@ -16,6 +16,7 @@
 		iedit
 		yaml-mode
 		dumb-jump
+		glsl-mode
 		))
 
 (check-packages packages-list)

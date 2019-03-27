@@ -3,7 +3,7 @@
                     (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
   (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
-;  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+ ; (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 (unless package--initialized (package-initialize))
