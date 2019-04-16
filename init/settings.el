@@ -33,7 +33,7 @@
                     :height  font-size)
 
 (setq treemacs-ignored-types '("vcd" "out" "asc" "zip" "bin" "blif" "dat" "cache" "eld"))
-(setq treemacs-ignored-files '(".git" ".cache" "elpa" ".gitmodules" "__pycache__" "auto-save-list" "simulation_flag.v"))
+(setq treemacs-ignored-files '(".git" ".cache" "elpa" ".gitmodules" "__pycache__" "auto-save-list" "simulation_flag.v" ".DS_Store"))
 (setq treemacs-ignored-parts "session.10")
 
 (defun is-treemacs-ignored-file (file _)

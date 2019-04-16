@@ -32,6 +32,8 @@
   (interactive)
   (find-file (concat path-service "/" path-cmake-file)))
 
+;; Vive
+
 (setq path-node-fpga (concat path-tes "/NodeFPGA"))
 
 (defun er ()
@@ -45,3 +47,11 @@
 (defun ca ()
   (interactive)
   (find-file (concat path-node-fpga "/calculations/source/sand/calculation_test.hpp")))
+
+;; Magnetic
+
+(setq path-magnetic (concat path-tes "/magnetictracking"))
+
+(defun mar ()
+  (interactive)
+  (find-file (concat path-magnetic "/magnetic_arm/main.cpp")))
