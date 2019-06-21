@@ -3,7 +3,7 @@
                     (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
   (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
- ; (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+ ; (add-to-list 'package-archives (cons "zzmelpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 (unless package--initialized (package-initialize))
@@ -23,7 +23,7 @@
 	("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-	(glsl-mode dumb-jump yaml-mode iedit multiple-cursors ## find-file-in-project super-save levenshtein pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs monokai-theme fsm auto-complete)))
+	(swift-mode glsl-mode dumb-jump yaml-mode iedit multiple-cursors ## find-file-in-project super-save levenshtein pt projectile monokai-alt-theme drag-stuff cmake-mode treemacs monokai-theme fsm auto-complete)))
  '(projectile-globally-ignored-directories
    (quote
 	(".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "build" "make")))

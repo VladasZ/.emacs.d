@@ -2,6 +2,7 @@
 (defun al () (interactive) (find-file path-hotkeys))
 (defun ai () (interactive) (find-file al-path))
 (defun sc () (interactive) (find-file "~/.emacs.d/init/shortcuts.el"))
+(defun sh () (interactive) (find-file "~/.deps/test_engine/Assets/Shaders/ui.frag"))
 
 (defalias 'inst 'package-install)
 (defalias 'var  'customize-variable)

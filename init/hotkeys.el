@@ -8,8 +8,7 @@
 (when (eq system-type 'darwin) 
   (setq mac-option-modifier 'control)
   (setq mac-command-modifier 'meta)
-  (global-set-key [kp-delete] 'delete-char)
-  )
+  (global-set-key [kp-delete] 'delete-char))
 
 (global-set-key [home] 'move-beginning-of-line)
 (global-set-key [end]  'move-end-of-line)
@@ -51,6 +50,7 @@
   (mode-key c-mode-base-map "M-b"  'build-cpp-project)
   (mode-key c-mode-base-map "M-r"  'run-cpp-project)
   (mode-key c-mode-base-map "M-k"  'clean-cpp-project)
+  (mode-key c-mode-base-map "M-f"  'flash-cpp-project)
   (mode-key c-mode-base-map "M-t"  'test-cpp-project))
 
 (with-eval-after-load 'cmake-mode
@@ -58,6 +58,7 @@
   (mode-key cmake-mode-map "M-b"   'build-cpp-project)
   (mode-key cmake-mode-map "M-r"   'run-cpp-project)
   (mode-key cmake-mode-map "M-k"   'clean-cpp-project)
+  (mode-key cmake-mode-map "M-f"   'flash-cpp-project)
   (mode-key cmake-mode-map "M-t"   'test-cpp-project)
   (mode-key cmake-mode-map "M-m"   'run-cmake))
 

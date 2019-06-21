@@ -18,6 +18,11 @@
   (interactive)
   (find-file (concat path-engine "/" path-cmake-file)))
 
+(setq path-sand "~/dev/sand/sand")
+
+(defun sand ()
+  (interactive)
+  (find-file (concat path-sand "/" path-cmake-file)))
 
 (setq path-smon (concat path-proj "/smon"))
 

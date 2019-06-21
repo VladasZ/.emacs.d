@@ -44,6 +44,10 @@
   (interactive)
   (run-build-script-with-params "--clean"))
 
+(defun flash-cpp-project ()
+  (interactive)
+  (run-build-script-with-params "--flash"))
+
 (defun cpp-compilers-info ()
   (interactive)
   (run-build-script-with-params "--dump-available-compilers"))
