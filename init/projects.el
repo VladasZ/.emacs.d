@@ -49,6 +49,12 @@
   (interactive)
   (find-file (concat path-node-fpga "/arm/main.cpp")))
 
+(defun har ()
+  (interactive)
+  (find-file (concat path-node-fpga "/hand_arm/main.cpp")))
+
+
+
 (defun ca ()
   (interactive)
   (find-file (concat path-node-fpga "/calculations/source/sand/calculation_test.hpp")))

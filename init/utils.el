@@ -49,7 +49,11 @@
 
 (defun add-to-path (value)
   (setenv "PATH"
-		  (concat value (getenv "PATH"))))
+		  (concat value ":" (getenv "PATH"))))
+
+(defun add-to-python-path (value)
+  (setenv "PYTHONPATH"
+		  (concat value ":" (getenv "PYTHONPATH"))))
 
 (defun expand-home-path (path)
   (replace-in-string "~/" (concat (getenv "HOME") "/") path))

@@ -20,9 +20,6 @@
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
 
-(if is-macos
-	(add-to-path "/usr/local/bin:"))
-
 (setq font-size
 	  (if is-macos
 		  200
@@ -46,11 +43,11 @@
 
 (setq make-backup-files nil)
 
-(setenv "PATH"
-  (concat "/opt/local/bin" ":"
-   (getenv "PATH")))
 
-(setenv "PATH"
-  (concat
-   "/Users/vladas/dev/tools/gcc-arm-none-eabi/bin" ":"
-   (getenv "PATH")))
+(if is-macos
+	(add-to-path "/usr/local/bin:"))
+
+(add-to-path "/opt/local/bin")
+(add-to-path "/Users/vladas/dev/tools/gcc-arm-none-eabi/bin")
+
+(add-to-python-path "/Users/vladas/.deps/build_tools")

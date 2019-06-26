@@ -1,6 +1,6 @@
 
 (defun build-script-path ()
-  (expand-home-path (concat (projectile-project-root) "build_tools/Build.py")))
+  (expand-home-path (concat (projectile-project-root) "build.py")))
 
 (defun run-build-script-with-params (params)
   (save-buffer)
