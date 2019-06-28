@@ -49,6 +49,7 @@
   (mode-key c-mode-base-map "M-p"  'prepare-cpp-project)
   (mode-key c-mode-base-map "M-b"  'build-cpp-project)
   (mode-key c-mode-base-map "M-r"  'run-cpp-project)
+  (mode-key c-mode-base-map "M-h"  'run-hand-project)
   (mode-key c-mode-base-map "M-k"  'clean-cpp-project)
   (mode-key c-mode-base-map "M-f"  'flash-cpp-project)
   (mode-key c-mode-base-map "M-t"  'test-cpp-project))

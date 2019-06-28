@@ -36,6 +36,10 @@
   (interactive)
   (run-build-script-with-params "--run"))
 
+(defun run-hand-project ()
+  (interactive)
+  (run-build-script-with-params "--run --hand"))
+
 (defun test-cpp-project ()
   (interactive)
   (run-build-script-with-params "--test"))

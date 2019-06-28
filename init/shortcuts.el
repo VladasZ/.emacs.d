@@ -5,6 +5,7 @@
 (defun sh () (interactive) (find-file "~/.shell/ios.sh"))
 (defun pf () (interactive) (find-file "~/.profile"))
 (defun bu () (interactive) (find-file "~/.deps/build_tools/Build.py"))
+(defun cu () (interactive) (find-file "~/.deps/cpp_utils/source/cpp_utils/Event.hpp"))
 
 (defalias 'inst 'package-install)
 (defalias 'var  'customize-variable)
