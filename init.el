@@ -16,7 +16,7 @@
  '(custom-enabled-themes (quote (monokai)))
  '(custom-safe-themes
    (quote
-	("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default)))
+	("c0a7c8590ec62863f8470481c749e993cddfa1d30a0c7f35c81536faaa968cf2" "bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "5f27195e3f4b85ac50c1e2fac080f0dd6535440891c54fcfa62cdcefedf56b1b" default)))
  '(linum-format " %d " t)
  '(nrepl-message-colors
    (quote
@@ -33,7 +33,7 @@
  '(treemacs-ignored-file-predicates
    (quote
 	(treemacs--std-ignore-file-predicate is-treemacs-ignored-file)))
- '(treemacs-width 22)
+ '(treemacs-width 26)
  '(truncate-lines nil))
 
 (add-to-list 'load-path "~/.emacs.d/init")
