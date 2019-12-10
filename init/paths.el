@@ -3,7 +3,10 @@
 
 (setq al-path "~/.emacs.d/init.el")
 
-(setq path-hotkeys "~/.emacs.d/init/hotkeys.el")
+(setq path-hotkeys
+	  (if is-macos
+		  "~/.emacs.d/init/mac_hotkeys.el"
+		  "~/.emacs.d/init/hotkeys.el"))
 
 (setq path-dev "~/dev")
 (setq path-work (concat path-dev "/work"))
