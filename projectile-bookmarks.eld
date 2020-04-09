@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/dev/work/tes/rehab/telemetry-server/" "~/.deps/build_tools/" "~/.deps/cpp_utils/" "~/.shell/" "~/.deps/test_engine/" "~/.deps/ui/" "~/.deps/scene/" "~/.deps/soil/" "~/.deps/gl_wrapper/" "~/.deps/geometry/" "~/.deps/image/")
+("~/.shell/" "~/.emacs.d/" "~/.deps/build_tools/" "~/.deps/test_engine/" "~/Downloads/m4/" "~/.deps/cpp_utils/" "~/.deps/ui/" "~/.deps/scene/" "~/.deps/gl_wrapper/" "~/.deps/geometry/" "~/.deps/image/")

@@ -77,4 +77,3 @@
   (interactive)
   (build-verilog-with-params "--simulate"))
 
-

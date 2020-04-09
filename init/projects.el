@@ -5,9 +5,6 @@
   (interactive)
   (find-file (concat path-shell "/shell.sh")))
 
-
-(setq path-utils "~/.emacs.d/utils")
-
 (defun ut ()
   (interactive)
   (find-file (concat path-utils "/" "Build.py")))
