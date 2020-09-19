@@ -6,9 +6,12 @@
 (setq path-hotkeys "~/.emacs.d/init/hotkeys.el")
 
 (setq path-dev "~/dev")
+(setq path-deps "~/.deps")
+
+(setq path-build-tools "~/.deps/build_tools")
+
+(setq path-te "~/.deps/test_engine")
+
 (setq path-work (concat path-dev "/work"))
-(setq path-tes (concat path-work "/tes"))
-(setq path-proj (concat path-dev "/projects"))
-(setq path-sand (concat path-dev "/sand"))
 
 (setq path-cmake-file "CMakeLists.txt")

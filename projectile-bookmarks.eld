@@ -1,1 +1,1 @@
-("~/.shell/" "~/.emacs.d/" "~/.deps/build_tools/" "~/.deps/test_engine/" "~/Downloads/m4/" "~/.deps/cpp_utils/" "~/.deps/ui/" "~/.deps/scene/" "~/.deps/gl_wrapper/" "~/.deps/geometry/" "~/.deps/image/")
+("~/.emacs.d/" "~/.shell/")

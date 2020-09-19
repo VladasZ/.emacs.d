@@ -45,10 +45,7 @@
 (load "settings")
 (load "build")
 (load "shortcuts")
-
-(if is-macos
-	(load "mac_hotkeys")
-    (load "hotkeys"))
+(load "hotkeys")
 (load "projects")
 
 (treemacs)
