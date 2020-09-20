@@ -20,7 +20,7 @@
 (map-key "M-a"         'other-window)
 (map-key "M-]"         'save-and-switch-to-next-buffer)
 (map-key "M-["         'save-and-switch-to-prev-buffer)
-(map-key "M-<right>"   'windmove-right)	
+(map-key "M-<right>"   'windmove-right)
 (map-key "M-<left>"    'windmove-left)
 (map-key "M-<up>"      'ff-find-other-file)
 (map-key "M-<down>"    'ff-find-other-file)

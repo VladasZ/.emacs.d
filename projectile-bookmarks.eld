@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/.shell/")
+("~/.emacs.d/" "~/dev/work/tes/teslasuit-studio/" "~/.deps/test_engine/" "~/.shell/")
