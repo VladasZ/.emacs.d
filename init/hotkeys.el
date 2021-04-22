@@ -15,6 +15,9 @@
 (map-key "<next>"      'my-scroll-up)
 (map-key "<prior>"     'my-scroll-down)
 
+(map-key "M-p" 'my-scroll-up)
+(map-key "M-;" 'my-scroll-down)
+
 (map-key "M-e"         'eval-buffer)
 (map-key "M-/"         'comment-or-uncomment-region) 
 (map-key "M-a"         'other-window)

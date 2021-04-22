@@ -16,9 +16,12 @@
 (setq linum-format "%d ")
 (setq ring-bell-function 'ignore)
 
-(tool-bar-mode -1)
 (menu-bar-mode -1)
-(toggle-scroll-bar -1)
+
+(if (display-graphic-p)
+    (progn
+      (tool-bar-mode -1)
+      (scroll-bar-mode -1)))
 
 (setq font-size
 	  (if is-macos
